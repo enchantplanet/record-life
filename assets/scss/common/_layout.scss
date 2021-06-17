@@ -1,10 +1,33 @@
+body {
+  font-size: $base-font-size + px;
+}
 header {
-  padding: getSize(20);
+  display: flex;
+  justify-content: space-between;
+  @include cont-fluid;
+  background-color: #999;
+  @include set-padding(20);
+  border-bottom: 1px solid #000;
 }
 footer {
-  padding: getSize(20);
+  @include cont-fluid;
+  @include set-margin(20, 0, 0);
+  @include set-padding(20);
+  background-color: #999;
 }
 
 .wrap {
   min-height: 100vh;
+}
+.heading-wrap {
+  h2 {
+    @include set-padding(20);
+    background-color: #999;
+    @include font-size(20);
+    @include font-color(#fff);
+  }
+}
+
+.contents {
+  @include cont-fluid;
 }

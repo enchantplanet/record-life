@@ -1,0 +1,40 @@
+{
+    "list":[
+        {
+            "id":"1",
+            "name":"깍지",
+            "birth":"2020.8.04",
+            "gender":"male",
+            "morph":"익스 할리",
+            "thumbnail":"/images/temp/cre1.jpg",
+            "report":"깍지는 이쁘다",
+            "father" :{
+                "name" :"unknown",
+                "birth":"2020.8.04"
+            },
+            "mother" :{
+                "name" :"unknown",
+                "birth":"2020.8.04"
+            },
+            "link":"깍지 상세"
+        },
+        {
+            "id":"2",
+            "name":"슈슈",
+            "birth":"",
+            "gender":"female",
+            "morph":"크림시클",
+            "thumbnail":"/images/temp/cre1.jpg",
+            "report":"슈슈는 성격이 드럽다",
+            "father" :{
+                "name" :"unknown",
+                "birth":""
+            },
+            "mother" :{
+                "name" :"unknown",
+                "birth":""
+            },
+            "link":"슈슈 상세"
+        }
+    ]
+}

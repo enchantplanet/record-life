@@ -1,0 +1,34 @@
+@import "@/assets/scss/common/common-sass.scss";
+
+.record-list-wrap {
+  li {
+    @include set-margin(10, 0, 0);
+    &:first {
+      @include set-margin(0);
+    }
+    .img-box {
+      height: 200px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .detail-info-wrap {
+    display: flex;
+    .img-box,
+    .info {
+      width: 50%;
+    }
+    .info {
+      @include set-padding(10);
+    }
+  }
+  .parent-info-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    @include set-padding(10);
+  }
+}

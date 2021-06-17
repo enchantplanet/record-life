@@ -1,0 +1,9 @@
+.btn-wrap {
+  @include set-margin(10, 0, 0);
+  .btn {
+    display: inline-block;
+    border: 1px solid #000;
+    @include set-padding(10);
+    text-decoration: none;
+  }
+}

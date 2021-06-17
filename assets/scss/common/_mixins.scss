@@ -1,0 +1,125 @@
+/* sr-only */
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@mixin set-padding($dimension...) {
+  padding: get-space($dimension);
+}
+@mixin set-margin($dimension...) {
+  margin: get-space($dimension);
+}
+//@include fontSize(10)
+@mixin font-size($dimension) {
+  font-size: get-size($dimension);
+}
+//@include fontSize(10)
+@mixin font-color($dimension) {
+  color: $dimension;
+}
+//@include before_left_line
+@mixin before_left_line($color: #bebebe, $height: 100%) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: $height;
+    margin-top: -$height/2;
+    background-color: $color;
+    @content;
+  }
+}
+//@include breakpoint{}
+@mixin md-359 {
+  @media (max-width: 359px) {
+    @content;
+  }
+}
+@mixin md-374 {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+@mixin md-767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin md-1023 {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin md-1239 {
+  @media (max-width: 1239px) {
+    @content;
+  }
+}
+@mixin md-1359 {
+  @media (max-width: 1359px) {
+    @content;
+  }
+}
+@mixin md-1599 {
+  @media (max-width: 1599px) {
+    @content;
+  }
+}
+@mixin md-1919 {
+  @media (max-width: 1919px) {
+    @content;
+  }
+}
+@mixin md-2559 {
+  @media (max-width: 2559px) {
+    @content;
+  }
+}
+/* cont-fluid */
+@mixin cont-fluid {
+  //max-width: $max-screen-width;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-left: get-size(140);
+  padding-right: get-size(140);
+
+  @include md-1919 {
+    padding-left: get-size(120);
+    padding-right: get-size(120);
+  }
+  @include md-1599 {
+    padding-left: get-size(100);
+    padding-right: get-size(100);
+  }
+  @include md-1359 {
+    padding-left: get-size(76);
+    padding-right: get-size(76);
+  }
+  @include md-1023 {
+    padding-left: get-size(58);
+    padding-right: get-size(58);
+  }
+  @include md-767 {
+    padding-left: get-size(30);
+    padding-right: get-size(30);
+  }
+}
+
+//@include after_clear_both
+@mixin after_clear_both {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
