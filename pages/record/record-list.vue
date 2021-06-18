@@ -1,6 +1,6 @@
 <template>
-    <fragment>
-        <LayoutHeading2 />
+    <div>
+        <LayoutHeading2 text="record list" />
         <record-list />
-    </fragment>
+    </div>
 </template>

@@ -2,29 +2,33 @@
         <div class="record-list-wrap">
             <ul>
                 <li v-for="item in listArrData" :key="item.id">
-                    
+                    <a href="#"  @click.prevent="goDetail(item)">
                     <div class="detail-info-wrap">
                         <div class="img-box">
-                            <img :src="item.thumbnail" alt="" />
+                            <img :src="item.thumbnail[0]" alt="" />
                         </div>
-                        <div class="info">
-                            <div class="parent-info-box">
-                                <div>
-                                    father : {{item.father.name}}
-                                </div>
-                                <div>
-                                    mother : {{item.mother.name}}
-                                </div>
+                        <div class="info-box">
+                            <div class="info-parent">
+                                <div class="father"><span class="name">{{item.father.name}}</span></div>
+                                <div class="mother"><span class="name">{{item.mother.name}}</span></div>
                             </div>
-                            <ul>
-                                <li>name : {{item.name}}</li>
-                                <li>birth : {{item.birth}}</li>
-                                <li>gender : {{item.gender}}</li>
-                                <li>morph : {{item.morph}}</li>
+                            <ul class="info-list">
+                                <li>
+                                    <div class="title">name</div><div class="desc">{{item.name}}</div>
+                                </li>
+                                <li>
+                                    <div class="title">birth</div><div class="desc">{{item.birth}}</div>
+                                </li>
+                                <li>
+                                    <div class="title">gender</div><div class="desc">{{item.gender}}</div>
+                                </li>
+                                <li>
+                                    <div class="title">morph</div><div class="desc">{{item.morph}}</div>
+                                </li>
                             </ul>
-                            <common-button :url-link="item.link" text="view"></common-button>
                         </div>
                     </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -42,8 +46,12 @@ export default {
     },
     methods: {
         async loadList() {
-             await this.$axios.$get('/json/record/record-list.json').then((response) => {
-                 this.dataSet(response);
+            let option = {
+                method: 'get',
+                url: this.$urlManager.rest.recordList
+            }
+             await this.$axios(option).then((response) => {
+                 this.dataSet(response.data);
             })
             .catch((err) => {
                 console.log("error : " ,err)   
@@ -51,6 +59,9 @@ export default {
         },
         dataSet(data){
             this.listArrData = data.list;
+        },
+        goDetail(data){
+            this.$router.push({ path: this.$urlManager.page.recordView, query: { "recordData": data.id }});
         }
     }
 }

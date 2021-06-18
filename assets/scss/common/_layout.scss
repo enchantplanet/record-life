@@ -1,33 +1,41 @@
+html {
+}
 body {
   font-size: $base-font-size + px;
+  background-color: $body-color;
 }
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   @include cont-fluid;
-  background-color: #999;
   @include set-padding(20);
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #e4e8eb;
+  background-color: $header-color;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
 }
 footer {
   @include cont-fluid;
-  @include set-margin(20, 0, 0);
+  @include set-margin(50, 0, 0);
   @include set-padding(20);
-  background-color: #999;
+  border-top: 1px solid #e4e8eb;
+  background-color: $footer-color;
 }
 
 .wrap {
-  min-height: 100vh;
+  height: 100vh;
 }
 .heading-wrap {
   h2 {
-    @include set-padding(20);
-    background-color: #999;
+    @include set-padding(20, 0);
     @include font-size(20);
-    @include font-color(#fff);
+    @include font-color($font-color-h2);
+    font-weight: 800;
   }
 }
 
 .contents {
+  @include set-margin(20, 0, 0);
+  min-height: calc(100% - #{$header-height + $footer-height}px);
   @include cont-fluid;
 }

@@ -1,5 +1,17 @@
 <template>
     <div class="heading-wrap">
-        <h2>record list content</h2>
+        <h2>{{text}}</h2>
     </div>
 </template>
+<script>
+export default {
+    props: {
+        text:{
+            type : String,
+            required:true
+        }
+        
+    },
+  
+}
+</script>

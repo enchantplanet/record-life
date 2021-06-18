@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>RECORD LIFE</h1>
+    <h1><a href="#" @click.prevent="goHome">RECORD LIFE</a></h1>
     <nav>
       <ul>
         <li>
@@ -10,3 +10,12 @@
     </nav>
   </header>
 </template>
+<script>
+export default {
+  methods: {
+    goHome() {
+      this.$router.push('/');
+    }
+  }
+}
+</script>

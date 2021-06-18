@@ -1,3 +1,5 @@
+import { resolve } from 'path'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -14,7 +16,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  loadingIndicator: {
+    name: 'circle',
+    color: '#3B8070',
+    background: 'white'
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/common/common.scss',
@@ -22,7 +28,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vue-fragment.js'
+    '~/plugins/urlManager.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

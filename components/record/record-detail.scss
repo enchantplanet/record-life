@@ -1,0 +1,84 @@
+@import "@/assets/scss/common/common-sass.scss";
+
+.record-detail-wrap {
+  .info-parent {
+    display: flex;
+    justify-content: space-evenly;
+    @include set-padding(10);
+    border-bottom: 1px solid $line-color-secondary;
+    .father,
+    .mother {
+      width: 50%;
+      text-align: center;
+    }
+
+    .father {
+      .name {
+        @include ico-father;
+      }
+    }
+    .mother {
+      .name {
+        @include ico-mother;
+      }
+    }
+    .img-box {
+      height: 200px;
+      @include set-margin(10, 0, 0, 0);
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .info-detail {
+    display: flex;
+    @include set-margin(20, 0, 0);
+    .img-box {
+      width: 50%;
+      ul {
+        display: flex;
+        overflow-x: auto;
+        height: 300px;
+        li {
+          float: left;
+          width: 100%;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .info-list {
+      > li {
+        display: flex;
+      }
+      .title {
+        width: set-space(70);
+        @include set-padding(10, 0);
+        @include set-margin(0, 10, 0);
+        font-weight: 700;
+        @include font-color($font-color-dark);
+        @include ico-list;
+      }
+      .desc {
+        @include set-padding(10, 0);
+        @include font-color($font-color-secondary);
+      }
+    }
+    .info-report {
+      width: 100%;
+      @include set-margin(10, 0, 0);
+      @include set-padding(10, 0, 0);
+      @include font-color($font-color-secondary);
+      border-top: 1px solid $line-color-primary;
+    }
+    .weight-list {
+      li {
+        @include set-margin(10, 0, 0);
+        &:first-child {
+          @include set-margin(0);
+        }
+      }
+    }
+  }
+}

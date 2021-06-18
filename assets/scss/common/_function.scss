@@ -1,14 +1,14 @@
 @use "sass:math";
 
 //Function to convert px value into rem
-@function get-size($target, $context: $base-font-size) {
+@function set-size($target, $context: $base-font-size) {
   @return math.div($target, $context) * 1rem;
 }
-@function get-space($dimension) {
+@function set-space($dimension) {
   $length: length($dimension);
   $list: ();
   @for $i from 1 through $length {
-    $list: append($list, get-size(nth($dimension, $i)));
+    $list: append($list, set-size(nth($dimension, $i)));
   }
   @return $list;
 }

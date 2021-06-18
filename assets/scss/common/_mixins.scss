@@ -11,14 +11,14 @@
 }
 
 @mixin set-padding($dimension...) {
-  padding: get-space($dimension);
+  padding: set-space($dimension);
 }
 @mixin set-margin($dimension...) {
-  margin: get-space($dimension);
+  margin: set-space($dimension);
 }
 //@include fontSize(10)
 @mixin font-size($dimension) {
-  font-size: get-size($dimension);
+  font-size: set-size($dimension);
 }
 //@include fontSize(10)
 @mixin font-color($dimension) {
@@ -37,6 +37,14 @@
     margin-top: -$height/2;
     background-color: $color;
     @content;
+  }
+}
+//@include after_clear_both
+@mixin after_clear_both {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 //@include breakpoint{}
@@ -90,36 +98,66 @@
   //max-width: $max-screen-width;
   margin: 0 auto;
   box-sizing: content-box;
-  padding-left: get-size(140);
-  padding-right: get-size(140);
+  padding-left: set-size(140);
+  padding-right: set-size(140);
 
   @include md-1919 {
-    padding-left: get-size(120);
-    padding-right: get-size(120);
+    padding-left: set-size(120);
+    padding-right: set-size(120);
   }
   @include md-1599 {
-    padding-left: get-size(100);
-    padding-right: get-size(100);
+    padding-left: set-size(100);
+    padding-right: set-size(100);
   }
   @include md-1359 {
-    padding-left: get-size(76);
-    padding-right: get-size(76);
+    padding-left: set-size(76);
+    padding-right: set-size(76);
   }
   @include md-1023 {
-    padding-left: get-size(58);
-    padding-right: get-size(58);
+    padding-left: set-size(58);
+    padding-right: set-size(58);
   }
   @include md-767 {
-    padding-left: get-size(30);
-    padding-right: get-size(30);
+    padding-left: set-size(30);
+    padding-right: set-size(30);
   }
 }
-
-//@include after_clear_both
-@mixin after_clear_both {
-  &::after {
+@mixin ico-list {
+  &::before {
     content: "";
-    clear: both;
-    display: table;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    border-radius: 50%;
+    vertical-align: top;
+    vertical-align: 2px;
+    background-color: $list-ico-color-primary;
+  }
+}
+@mixin ico-father {
+  &::before {
+    content: "F";
+    display: inline-block;
+    width: set-size(20);
+    height: set-size(20);
+    @include set-margin(0, 10, 0, 0);
+    text-align: center;
+    vertical-align: middle;
+    @include font-color($font-color-light);
+    background-color: $ico-father-bg;
+  }
+}
+@mixin ico-mother {
+  &::before {
+    content: "M";
+    display: inline-block;
+    width: set-size(20);
+    height: set-size(20);
+    @include set-margin(0, 10, 0, 0);
+    text-align: center;
+    vertical-align: middle;
+    @include font-color($font-color-light);
+    background-color: $ico-mother-bg;
   }
 }
