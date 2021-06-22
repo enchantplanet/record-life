@@ -2,54 +2,289 @@
     "list":[
         {
             "id":"1",
-            "name":"깍지",
+            "name":"kkagi",
             "birth":"2020.8.04",
             "gender":"male",
-            "morph":"익스 할리",
-            "thumbnail":["/images/temp/cre1.jpg","/images/temp/cre1.jpg"],
+            "morph":"트라이 익스 할리",
+            "thumbnail":["/images/my_cre/kkagi/1623019395845.jpg",
+                "/images/my_cre/kkagi/20210308_203946.jpg",
+                "/images/my_cre/kkagi/20210311_202757.jpg",
+                "/images/my_cre/kkagi/20210406_212423.jpg",
+                "/images/my_cre/kkagi/20210406_212525.jpg",
+                "/images/my_cre/kkagi/20210504_233426.jpg",
+                "/images/my_cre/kkagi/20210530_004134.jpg",
+                "/images/my_cre/kkagi/20210530_004137.jpg",
+                "/images/my_cre/kkagi/20210607_210332.jpg",
+                "/images/my_cre/kkagi/1624119430120-1.jpg",
+                "/images/my_cre/kkagi/1624119430120-2.jpg"],
             "report":"깍지는 이쁘다 그러나 말 안듣다",
             "father" :{
-                "name" :"깍지 아빠",
-                "birth":"2020.8.04",
-                "thumbnail": "/images/temp/cre1.jpg"
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": "/images/my_cre/kkagi/father.png"
             },
             "mother" :{
-                "name" :"깍지 엄마",
-                "birth":"2020.8.04",
-                "thumbnail": "/images/temp/cre1.jpg"
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": "/images/my_cre/kkagi/mother.png"
             },
             "weight":[
-                {"date" : "2020.01.03","weight" : "2.1"},
-                {"date" : "2020.02.02","weight" : "3.1"},
-                {"date" : "2020.03.03","weight" : "4.1"},
-                {"date" : "2020.04.04","weight" : "5.1"},
-                {"date" : "2020.05.05","weight" : "6.1"}
+                {"date" : "2021.03.27","weight" : "3.6"},
+                {"date" : "2021.04.04","weight" : "3.7"},
+                {"date" : "2021.04.09","weight" : "3.8"},
+                {"date" : "2021.04.12","weight" : "4.3"},
+                {"date" : "2021.04.16","weight" : "4.2"},
+                {"date" : "2021.04.23","weight" : "4"},
+                {"date" : "2021.04.30","weight" : "4.1"},
+                {"date" : "2021.05.08","weight" : "4.7"},
+                {"date" : "2021.05.14","weight" : "5.6"},
+                {"date" : "2021.05.22","weight" : "6.7"},
+                {"date" : "2021.05.29","weight" : "7.3"},
+                {"date" : "2021.06.04","weight" : "7.9"}
             ]
         },
         {
             "id":"2",
-            "name":"슈슈",
+            "name":"shushu",
             "birth":"",
             "gender":"female",
             "morph":"크림시클",
-            "thumbnail":["/images/temp/cre1.jpg","/images/temp/cre1.jpg"],
+            "thumbnail":["/images/my_cre/shushu/20210612_180124.jpg",
+                "/images/my_cre/shushu/20210323_224457.jpg",
+                "/images/my_cre/shushu/20210323_224542.jpg",
+                "/images/my_cre/shushu/20210329_204935.jpg",
+                "/images/my_cre/shushu/20210403_213331.jpg",
+                "/images/my_cre/shushu/20210406_214017.jpg",
+                "/images/my_cre/shushu/20210406_214023.jpg",
+                "/images/my_cre/shushu/20210406_214056.jpg",
+                "/images/my_cre/shushu/20210417_212208.jpg",
+                "/images/my_cre/shushu/20210504_234022.jpg",
+                "/images/my_cre/shushu/20210530_005228.jpg",
+                "/images/my_cre/shushu/20210530_005233.jpg",
+                "/images/my_cre/shushu/20210604_223754.jpg"
+            ],
             "report":"슈슈는 성격이 드럽다",
             "father" :{
-                "name" :"슈슈 아빠 모름",
+                "name" :"unknown",
                 "birth":"",
-                "thumbnail": "/images/temp/cre1.jpg"
+                "thumbnail": ""
             },
             "mother" :{
-                "name" :"슈슈 엄마 모름",
-                "birth":"2020.8.04",
-                "thumbnail": "/images/temp/cre1.jpg"
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": ""
             },
             "weight":[
-                {"date" : "2020.01.03","weight" : "2.1"},
-                {"date" : "2020.02.02","weight" : "3.1"},
-                {"date" : "2020.03.03","weight" : "4.1"},
-                {"date" : "2020.04.04","weight" : "5.1"},
-                {"date" : "2020.05.05","weight" : "6.1"}
+                {"date" : "2021.03.27","weight" : "7.6"},
+                {"date" : "2021.04.04","weight" : "8.9"},
+                {"date" : "2021.04.09","weight" : "9"},
+                {"date" : "2021.04.16","weight" : "9.6"},
+                {"date" : "2021.04.23","weight" : "10.7"},
+                {"date" : "2021.04.30","weight" : "10.4"},
+                {"date" : "2021.05.08","weight" : "11.3"},
+                {"date" : "2021.05.14","weight" : "13.5"},
+                {"date" : "2021.05.22","weight" : "14.8"},
+                {"date" : "2021.05.29","weight" : "15.5"},
+                {"date" : "2021.06.04","weight" : "16.7"},
+                {"date" : "2021.06.11","weight" : "16.5"}
+            ]
+        },
+        {
+            "id":"3",
+            "name":"koko",
+            "birth":"",
+            "gender":"female",
+            "morph":"텐저린",
+            "thumbnail":["/images/my_cre/koko/20210403_212907.jpg",
+                "/images/my_cre/koko/20210415_210601.jpg",
+                "/images/my_cre/koko/20210417_185848_HDR.jpg",
+                "/images/my_cre/koko/20210504_232734.jpg",
+                "/images/my_cre/koko/20210602_213348.jpg",
+                "/images/my_cre/koko/20210602_213401.jpg",
+                "/images/my_cre/koko/20210615_195420.jpg"
+            ],
+            "report":"코코는 무엇이 될꼬?",
+            "father" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "mother" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "weight":[
+                {"date" : "2021.03.22","weight" : "2.3"},
+                {"date" : "2021.03.27","weight" : "2.5"},
+                {"date" : "2021.04.04","weight" : "2.4"},
+                {"date" : "2021.04.09","weight" : "2.7"},
+                {"date" : "2021.04.16","weight" : "3.1"},
+                {"date" : "2021.05.08","weight" : "4.4"},
+                {"date" : "2021.05.14","weight" : "4.6"},
+                {"date" : "2021.05.22","weight" : "5.3"},
+                {"date" : "2021.05.29","weight" : "6.3"},
+                {"date" : "2021.06.04","weight" : "6.5"},
+                {"date" : "2021.06.11","weight" : "7.2"}
+            ]
+        },
+        {
+            "id":"4",
+            "name":"kongi",
+            "birth":"",
+            "gender":"male",
+            "morph":"릴리",
+            "thumbnail":["/images/my_cre/kongi/20210504_231524.jpg",
+                "/images/my_cre/kongi/20210408_221645.jpg",
+                "/images/my_cre/kongi/20210408_222244.jpg",
+                "/images/my_cre/kongi/20210417_190002.jpg",
+                "/images/my_cre/kongi/20210421_222036.jpg",
+                "/images/my_cre/kongi/20210421_222124.jpg",
+                "/images/my_cre/kongi/20210512_192753.jpg",
+                "/images/my_cre/kongi/20210512_192817.jpg",
+                "/images/my_cre/kongi/20210521_203652.jpg",
+                "/images/my_cre/kongi/20210526_213303.jpg",
+                "/images/my_cre/kongi/20210526_213315.jpg",
+                "/images/my_cre/kongi/20210530_005359.jpg",
+                "/images/my_cre/kongi/20210530_005409.jpg"
+            ],
+            "report":"꽁지야 언넝 크자?",
+            "father" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "mother" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "weight":[
+                {"date" : "2021.03.27","weight" : "2.1"},
+                {"date" : "2021.04.04","weight" : "2.1"},
+                {"date" : "2021.04.09","weight" : "2.4"},
+                {"date" : "2021.04.16","weight" : "2.7"},
+                {"date" : "2021.04.23","weight" : "2.9"},
+                {"date" : "2021.04.30","weight" : "3.2"},
+                {"date" : "2021.05.08","weight" : "3.3"},
+                {"date" : "2021.05.14","weight" : "3.5"},
+                {"date" : "2021.05.22","weight" : "4.4"},
+                {"date" : "2021.05.29","weight" : "4.8"},
+                {"date" : "2021.06.04","weight" : "5"},
+                {"date" : "2021.06.11","weight" : "5.5"}
+            ]
+        },
+        {
+            "id":"5",
+            "name":"dalkong",
+            "birth":"",
+            "gender":"female",
+            "morph":"릴리 트라이",
+            "thumbnail":["/images/my_cre/dalkong/1619485345783.jpg",
+                "/images/my_cre/dalkong/20210427_205417.jpg",
+                "/images/my_cre/dalkong/20210427_205422.jpg",
+                "/images/my_cre/dalkong/20210427_205548.jpg",
+                "/images/my_cre/dalkong/20210427_205556.jpg",
+                "/images/my_cre/dalkong/20210504_232041.jpg",
+                "/images/my_cre/dalkong/20210504_232055.jpg",
+                "/images/my_cre/dalkong/20210506_224653.jpg",
+                "/images/my_cre/dalkong/20210519_020539.jpg",
+                "/images/my_cre/dalkong/20210519_020554.jpg",
+                "/images/my_cre/dalkong/20210521_202607.jpg",
+                "/images/my_cre/dalkong/20210523_163529.jpg",
+                "/images/my_cre/dalkong/20210530_004646.jpg",
+                "/images/my_cre/dalkong/20210530_004653.jpg",
+                "/images/my_cre/dalkong/20210530_010833_HDR.jpg",
+                "/images/my_cre/dalkong/20210604_225111.jpg",
+                "/images/my_cre/dalkong/20210608_212806.jpg",
+                "/images/my_cre/dalkong/20210608_212812.jpg",
+                "/images/my_cre/dalkong/20210608_212816.jpg"
+            ],
+            "report":"달콩이 이뽀",
+            "father" :{
+                "name" :"백수",
+                "birth":"",
+                "thumbnail": "/images/my_cre/dalkong/1619487289353.jpg"
+            },
+            "mother" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "weight":[
+                {"date" : "2021.04.30","weight" : "6.3"},
+                {"date" : "2021.05.08","weight" : "8.6"},
+                {"date" : "2021.05.14","weight" : "9.1"},
+                {"date" : "2021.05.22","weight" : "11"},
+                {"date" : "2021.05.29","weight" : "11.4"},
+                {"date" : "2021.06.04","weight" : "12.7"},
+                {"date" : "2021.06.11","weight" : "12.9"}
+            ]
+        },
+        {
+            "id":"6",
+            "name":"bark",
+            "birth":"",
+            "gender":"female",
+            "morph":"릴리 트라이",
+            "thumbnail":["/images/my_cre/bark/1624119430120-7.jpg",
+                "/images/my_cre/bark/1624119430120-3.jpg",
+                "/images/my_cre/bark/1624119430120-4.jpg",
+                "/images/my_cre/bark/1624119430120-5.jpg",
+                "/images/my_cre/bark/1624119430120-8.jpg"
+            ],
+            "report":"상남자 바크!",
+            "father" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": "/images/my_cre/bark/1624250228254-0.jpg"
+            },
+            "mother" :{
+                "name" :"unknown",
+                "birth":"",
+                "thumbnail": "/images/my_cre/bark/1624250228254-1.jpg"
+            },
+            "weight":[
+                {"date" : "2021.06.18","weight" : "30"}
+               
+            ]
+        },
+        {
+            "id":"7",
+            "name":"rebin",
+            "birth":"",
+            "gender":"모름",
+            "morph":"팬텀 릴리",
+            "thumbnail":["/images/my_cre/rebin/20210618_225110.jpg",
+                "/images/my_cre/rebin/20210618_225118.jpg",
+                "/images/my_cre/rebin/20210619_164201.jpg",
+                "/images/my_cre/rebin/20210619_164308.jpg",
+                "/images/my_cre/rebin/20210619_164342.jpg",
+                "/images/my_cre/rebin/20210619_164350.jpg",
+                "/images/my_cre/rebin/20210619_164352.jpg",
+                "/images/my_cre/rebin/20210619_164356.jpg",
+                "/images/my_cre/rebin/20210619_164617.jpg",
+                "/images/my_cre/rebin/20210619_220305.jpg",
+                "/images/my_cre/rebin/20210619_220412.jpg",
+                "/images/my_cre/rebin/20210619_220418.jpg",
+                "/images/my_cre/rebin/BandPhoto_2021_06_16_09_46_09.jpg",
+                "/images/my_cre/rebin/BandPhoto_2021_06_16_09_46_15.jpg",
+                "/images/my_cre/rebin/BandPhoto_2021_06_16_09_46_21.jpg"
+            ],
+            "report":"인형같은 레빈이~!",
+            "father" :{
+                "name" :"밀크레드",
+                "birth":"",
+                "thumbnail": "/images/my_cre/rebin/father.jpg"
+            },
+            "mother" :{
+                "name" :"귤이",
+                "birth":"",
+                "thumbnail": "/images/my_cre/rebin/mother.jpg"
+            },
+            "weight":[
+                {"date" : "2021.06.18","weight" : "2"}
+               
             ]
         }
     ]

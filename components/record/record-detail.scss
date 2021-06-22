@@ -31,10 +31,8 @@
     }
   }
   .info-detail {
-    display: flex;
     @include set-margin(20, 0, 0);
     .img-box {
-      width: 50%;
       ul {
         display: flex;
         overflow-x: auto;
@@ -65,13 +63,7 @@
         @include font-color($font-color-secondary);
       }
     }
-    .info-report {
-      width: 100%;
-      @include set-margin(10, 0, 0);
-      @include set-padding(10, 0, 0);
-      @include font-color($font-color-secondary);
-      border-top: 1px solid $line-color-primary;
-    }
+
     .weight-list {
       li {
         @include set-margin(10, 0, 0);

@@ -46,49 +46,25 @@
                             
                         </div>
                     </li>
+                    <li>
+                        <div class="title">report</div><div class="desc">{{detailData.report}}</div>
+                    </li>
                 </ul>
                 
             </div>
-            <p class="info-report">{{detailData.report}}</p>
         </div>
 </template>
 <script>
 
 export default {
-    data: function () {
-        return {
-            detailId:null,
-            detailData: null
+    props: {
+        detailData:{
+            type : Object,
+            required:true
         }
-   },
-    mounted() {
-        this.detailId = this.$route.query.recordData;
-        this.loadList();
     },
-    methods: {
-        async loadList() {
-            let option = {
-                method: 'get',
-                url: this.$urlManager.rest.recordDetail,
-                parmas : {ID:this.detailId}
-            }
-            
-             await this.$axios(option).then((response) => {
-                 this.dataSet(response.data);
-            })
-            .catch((err) => {
-                console.log("error : " ,err)   
-            });
-        },
-        dataSet(data){
-            let _this = this;
-            data.list.forEach(item => {
-                if(item.id == this.detailId ){
-                    this.detailData = item;
-                    return;
-                }
-            });
-        },
+    mounted(){
+        console.log(this.detailData)
     }
 }
 </script>
