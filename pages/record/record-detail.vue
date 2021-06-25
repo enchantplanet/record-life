@@ -2,15 +2,27 @@
     <div>
         <LayoutHeading2 :text="getName" />
         <record-detail v-if="detailData" :detailData="detailData" />
+        <vue-masonry-wall :items="imageItems" :options="{width: 300, padding: 12}">
+            <template v-slot:default="{item}">
+                <div class="item">
+                    <img :src="item.image"/>
+                    <div v-if="item.title" class="title">{{item.title}}</div>
+                    <p v-if="item.content" class="content">{{item.content}}</p>
+                </div>
+            </template>
+        </vue-masonry-wall>
     </div>
 </template>
 <script>
+import VueMasonryWall from "vue-masonry-wall";
 export default {
+    components: {VueMasonryWall},
     data: function () {
         return {
             dataName:"",
             detailId:null,
-            detailData: null
+            detailData: null,
+            imageItems:[]
         }
    },
    computed:{
@@ -42,10 +54,12 @@ export default {
                 if(item.id == this.detailId ){
                     this.detailData = item;
                     this.dataName = item.name;
+                    this.imageItems = item.thumbnail;
                     return;
                 }
             });
         },
+       
     }
 }
 </script>

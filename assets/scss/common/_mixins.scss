@@ -94,8 +94,15 @@
   }
 }
 /* cont-fluid */
-@mixin cont-fluid {
-  //max-width: $max-screen-width;
+@mixin cont-fluid($type: "content") {
+  @if $type == "header" {
+    max-width: $max-header-width;
+  } @else if $type == "footer" {
+    max-width: $max-footer-width;
+  } @else {
+    max-width: $max-content-width;
+  }
+
   margin: 0 auto;
   box-sizing: content-box;
   padding-left: set-size(140);

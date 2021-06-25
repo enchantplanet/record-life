@@ -15,13 +15,6 @@
                 </div>
             </div>
             <div class="info-detail">
-                <div class="img-box">
-                    <ul>
-                        <li v-for="item in detailData.thumbnail" :key="item.thumbnail">
-                            <img :src="item" alt="" />
-                        </li>
-                    </ul>
-                </div>
                 <ul class="info-list">
                     <li>
                         <div class="title">name</div><div class="desc">{{detailData.name}}</div>
@@ -35,15 +28,16 @@
                     <li>
                         <div class="title">morph</div><div class="desc">{{detailData.morph}}</div>
                     </li>
-                    <li>
+                    <li v-if="detailData.weight">
                         <div class="title">weight</div>
                         <div class="desc">
-                            <ul class="weight-list">
+                            최근 {{detailData.weight[0].date}} : {{detailData.weight[0].weight}} {{$infoManager.weightUnit}}
+                            <button type="button" @click="toggleWeightList">리스트</button>
+                            <ul class="weight-list" v-if="isViewWeight">
                                 <li  v-for="item in detailData.weight" :key="item.date">
-                                    {{item.date}}   :   {{item.weight}}g
+                                    {{item.date}}   :   {{item.weight}} {{$infoManager.weightUnit}}
                                 </li>
                             </ul>
-                            
                         </div>
                     </li>
                     <li>
@@ -57,14 +51,25 @@
 <script>
 
 export default {
+  components: { },
     props: {
         detailData:{
             type : Object,
             required:true
         }
     },
+    data : function(){
+        return {
+            isViewWeight: false,
+        }
+    },
     mounted(){
         console.log(this.detailData)
+    },
+    methods :{
+        toggleWeightList(){
+            this.isViewWeight = !this.isViewWeight;
+        }
     }
 }
 </script>

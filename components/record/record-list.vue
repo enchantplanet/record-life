@@ -5,7 +5,7 @@
                     <a href="#"  @click.prevent="goDetail(item)">
                     <div class="detail-info-wrap">
                         <div class="img-box">
-                            <img :src="item.thumbnail[0]" alt="" />
+                            <img :src="item.thumbnail[0].image" alt="" />
                         </div>
                         <div class="info-box">
                             <div class="info-parent">

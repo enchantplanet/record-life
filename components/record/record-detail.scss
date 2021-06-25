@@ -4,29 +4,36 @@
   .info-parent {
     display: flex;
     justify-content: space-evenly;
-    @include set-padding(10);
     border-bottom: 1px solid $line-color-secondary;
     .father,
     .mother {
       width: 50%;
       text-align: center;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
     .father {
+      @include set-padding(0, 10, 0);
       .name {
         @include ico-father;
       }
     }
     .mother {
+      @include set-padding(0, 0, 10);
       .name {
         @include ico-mother;
       }
     }
     .img-box {
-      height: 200px;
+      height: 300px;
       @include set-margin(10, 0, 0, 0);
       img {
-        height: 100%;
+        width: 100%;
+        max-height: 100%;
       }
     }
   }

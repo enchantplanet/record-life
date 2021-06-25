@@ -1,0 +1,38 @@
+@import "@/assets/scss/common/common-sass.scss";
+
+.search-wrap {
+  @include set-margin(20, 0, 0);
+}
+.breeder-list-wrap {
+  @include set-margin(20, 0, 0);
+  .breeder-list {
+    @include after_clear_both;
+    > li {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      &:nth-child(1n) {
+        @include set-padding(0, 10, 0, 0);
+      }
+      &:nth-child(2n) {
+        @include set-padding(0, 0, 0, 10);
+      }
+      &:nth-child(n + 3) {
+        @include set-margin(30, 0, 0);
+      }
+    }
+    .name {
+      background-color: $background-color-primary;
+      height: set-size(100);
+    }
+    .breeder-info-list {
+      > li {
+        @include set-padding(5, 0);
+        display: flex;
+        .title {
+          width: set-size(100);
+        }
+      }
+    }
+  }
+}

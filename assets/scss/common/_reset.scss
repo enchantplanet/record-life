@@ -126,3 +126,6 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+legend {
+  @include sr-only;
+}
