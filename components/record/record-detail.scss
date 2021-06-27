@@ -1,5 +1,6 @@
 @import "@/assets/scss/common/common-sass.scss";
 
+
 .record-detail-wrap {
   .info-parent {
     display: flex;
@@ -17,7 +18,9 @@
     }
 
     .father {
-      @include set-padding(0, 10, 0);
+      // @include set-padding(0, 10, 0);
+      @include unit(padding, 0 10 0);
+
       .name {
         @include ico-father;
       }
@@ -38,6 +41,7 @@
     }
   }
   .info-detail {
+    
     @include set-margin(20, 0, 0);
     .img-box {
       ul {
@@ -54,8 +58,11 @@
       }
     }
     .info-list {
+      display: flex;
+      flex-wrap: wrap;
       > li {
         display: flex;
+        width: 50%;
       }
       .title {
         width: set-space(70);

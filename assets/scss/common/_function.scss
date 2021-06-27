@@ -12,3 +12,7 @@
   }
   @return $list;
 }
+
+@function parseInt($n) {
+  @return math.div($n , ($n * 0 +1) );
+}

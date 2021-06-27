@@ -1,3 +1,4 @@
+@use "sass:math";
 /* sr-only */
 @mixin sr-only {
   position: absolute;
@@ -8,6 +9,32 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+@mixin unit($property, $values) {
+  $expect: 0, auto, left, right, top, bottom, center, !important;
+
+  // $px: ();
+  $rem: ();
+
+  @each $value in $values {
+    @if index($expect, $value) {
+      // $px: append($px, $value);
+      $rem: append($rem, $value);
+    } @else {
+      $val: parseInt($value);
+      // $px: append($px, $value);
+      $rem: append($rem, math.div($val , $base-font-size) + rem);
+    }
+  }
+
+  @if index('!important', $values) {
+    // #{$property}: $px + '!important';
+    #{$property}: $rem + '!important';
+  } @else{
+    // #{$property}: $px;
+    #{$property}: $rem;
+  }
 }
 
 @mixin set-padding($dimension...) {
