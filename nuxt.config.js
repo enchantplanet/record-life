@@ -1,9 +1,4 @@
 import { resolve } from 'path'
-
-
-const config = {
-  apiserver: process.env.NODE_ENV !== 'production' ? 'http://localhost:3000' : 'https://record-life.herokuapp.com',
-}
 export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -52,7 +47,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-   
+    baseURL:"/"
   },
   proxy: {
     
