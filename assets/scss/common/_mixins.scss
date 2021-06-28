@@ -12,42 +12,27 @@
 }
 
 @mixin unit($property, $values) {
-  $expect: 0, auto, left, right, top, bottom, center, !important;
+  $expect: 0, auto, left, right, top, bottom, center !important;
 
   // $px: ();
   $rem: ();
 
   @each $value in $values {
     @if index($expect, $value) {
-      // $px: append($px, $value);
       $rem: append($rem, $value);
     } @else {
       $val: parseInt($value);
-      // $px: append($px, $value);
-      $rem: append($rem, math.div($val , $base-font-size) + rem);
+      $rem: append($rem, math.div($val, $base-font-size) + rem);
     }
   }
 
-  @if index('!important', $values) {
-    // #{$property}: $px + '!important';
-    #{$property}: $rem + '!important';
-  } @else{
-    // #{$property}: $px;
+  @if index("!important", $values) {
+    #{$property}: $rem + "!important";
+  } @else {
     #{$property}: $rem;
   }
 }
 
-@mixin set-padding($dimension...) {
-  padding: set-space($dimension);
-}
-@mixin set-margin($dimension...) {
-  margin: set-space($dimension);
-}
-//@include fontSize(10)
-@mixin font-size($dimension) {
-  font-size: set-size($dimension);
-}
-//@include fontSize(10)
 @mixin font-color($dimension) {
   color: $dimension;
 }
@@ -175,7 +160,7 @@
     display: inline-block;
     width: set-size(20);
     height: set-size(20);
-    @include set-margin(0, 10, 0, 0);
+    @include unit(margin, 0 10 0 0);
     text-align: center;
     vertical-align: middle;
     @include font-color($font-color-light);
@@ -188,7 +173,7 @@
     display: inline-block;
     width: set-size(20);
     height: set-size(20);
-    @include set-margin(0, 10, 0, 0);
+    @include unit(margin, 0 10 0 0);
     text-align: center;
     vertical-align: middle;
     @include font-color($font-color-light);

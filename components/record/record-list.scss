@@ -2,12 +2,13 @@
 
 .record-list-wrap {
   > ul > li {
-    @include set-margin(20, 0, 0);
-    @include set-padding(20, 0, 0);
+    @include unit(margin, 20 0 0);
+    @include unit(padding, 20 0 0);
+
     border-top: 1px solid $line-color-primary;
     &:first-child {
-      @include set-margin(0);
-      @include set-padding(0, 0, 0);
+      @include unit(margin, 0);
+      @include unit(padding, 0 0 0);
       border-top: none;
     }
   }
@@ -16,7 +17,7 @@
     display: flex;
     .img-box {
       width: 50%;
-      height: 200px;
+      @include unit(height, 200);
       background-color: #eee;
       img {
         height: 100%;
@@ -27,13 +28,13 @@
 
     .info-box {
       width: 50%;
-      @include set-padding(0, 10);
+      @include unit(padding, 0 10);
     }
   }
   .info-parent {
     display: flex;
     justify-content: space-between;
-    @include set-padding(10);
+    @include unit(padding, 10);
     border-bottom: 1px solid $line-color-secondary;
     .father,
     .mother {
@@ -55,15 +56,15 @@
       display: flex;
     }
     .title {
-      width: set-space(70);
-      @include set-padding(10, 0);
-      @include set-margin(0, 10, 0);
+      @include unit(width, 70);
+      @include unit(margin, 0 10 0);
+      @include unit(padding, 10 0);
       font-weight: 700;
       @include font-color($font-color-dark);
       @include ico-list;
     }
     .desc {
-      @include set-padding(10, 0);
+      @include unit(padding, 10 0);
       @include font-color($font-color-secondary);
     }
   }
