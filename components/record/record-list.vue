@@ -1,5 +1,6 @@
 <template>
         <div class="record-list-wrap">
+            Our Url is: {{ $config.baseURL}}
             <ul>
                 <li v-for="item in listArrData" :key="item.id">
                     <a href="#"  @click.prevent="goDetail(item)">
