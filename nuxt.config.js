@@ -1,8 +1,6 @@
-import { env } from 'process'
+let apiUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://record-life.herokuapp.com/';
 export default {
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
-  },
+ 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'record-life',
@@ -49,7 +47,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL:env.baseUrl
+    baseURL:apiUrl
   },
   proxy: {
     
