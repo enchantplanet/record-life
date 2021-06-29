@@ -1,6 +1,8 @@
-import { resolve } from 'path'
+import { env } from 'process'
 export default {
-
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'record-life',
@@ -29,7 +31,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/urlManager.js',
-    '~/plugins/infoManager.js'
+    '~/plugins/infoManager.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,7 +49,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL:"/"
+    baseURL:env.baseUrl
   },
   proxy: {
     
