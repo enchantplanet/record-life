@@ -28,10 +28,10 @@
                     <li>
                         <div class="title">morph</div><div class="desc">{{detailData.morph}}</div>
                     </li>
-                    <li v-if="detailData.weight">
+                    <li class="info-weight" v-if="detailData.weight">
                         <div class="title">weight</div>
                         <div class="desc">
-                            최근 {{detailData.weight[0].date}} : {{detailData.weight[0].weight}} {{$infoManager.weightUnit}}
+                            {{detailData.weight[detailData.weight.length -1].date}} : {{detailData.weight[detailData.weight.length -1].weight}} {{$infoManager.weightUnit}}
                             <button type="button" @click="toggleWeightList">리스트</button>
                             <ul class="weight-list" v-if="isViewWeight">
                                 <li  v-for="item in detailData.weight" :key="item.date">
@@ -40,7 +40,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="info-report">
                         <div class="title">report</div><div class="desc">{{detailData.report}}</div>
                     </li>
                 </ul>

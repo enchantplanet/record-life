@@ -71,19 +71,37 @@
         @include font-color($font-color-dark);
         @include ico-list;
       }
+      .info-report {
+        width: 100%;
+      }
       .desc {
         @include unit(padding, 10 0);
         @include font-color($font-color-secondary);
       }
     }
 
-    .weight-list {
-      li {
-        @include unit(margin, 10 0 0);
-        &:first-child {
-          @include unit(margin, 0);
+    .info-weight {
+      .desc {
+        position: relative;
+      }
+      .weight-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        @include unit(padding, 10);
+        @include unit(max-height, 200);
+        overflow-y: auto;
+        background-color: $background-color-primary;
+        li {
+          @include unit(margin, 10 0 0);
+          &:first-child {
+            @include unit(margin, 0);
+          }
         }
       }
     }
   }
+}
+.masonry-container {
+  @include unit(margin, 20 0 0);
 }
