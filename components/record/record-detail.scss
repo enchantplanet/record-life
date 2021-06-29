@@ -63,7 +63,7 @@
         width: 50%;
       }
       .title {
-        @include unit(width, 70);
+        @include unit(width, 100);
         @include unit(padding, 10 0);
         @include unit(margin, 0 10 0);
 

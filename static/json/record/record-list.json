@@ -2,6 +2,10 @@
     "list":[
         {
             "id":"1",
+            "breeder":{
+                "team":"라움",
+                "name" : "게코월드 _김포"
+            },
             "name":"kkagi",
             "birth":"2020.8.04",
             "gender":"male",
@@ -48,6 +52,10 @@
         },
         {
             "id":"2",
+            "breeder":{
+                "team":"더브리더스",
+                "name" : "구월점"
+            },
             "name":"shushu",
             "birth":"",
             "gender":"female",
@@ -96,6 +104,10 @@
         },
         {
             "id":"3",
+            "breeder":{
+                "team":"더브리더스",
+                "name" : "구월점"
+            },
             "name":"koko",
             "birth":"",
             "gender":"female",
@@ -137,6 +149,10 @@
         },
         {
             "id":"4",
+            "breeder":{
+                "team":"MOON REPTILE",
+                "name" : "마산점"
+            },
             "name":"kongi",
             "birth":"",
             "gender":"male",
@@ -185,6 +201,10 @@
         },
         {
             "id":"5",
+            "breeder":{
+                "team":"Team CreWind",
+                "name" : "낭만사도"
+            },
             "name":"dalkong",
             "birth":"",
             "gender":"female",
@@ -234,6 +254,10 @@
         },
         {
             "id":"6",
+            "breeder":{
+                "team":"더베스트팜",
+                "name" : "필더네(마곡점)"
+            },
             "name":"bark",
             "birth":"",
             "gender":"female",
@@ -247,12 +271,12 @@
             ],
             "report":"상남자 바크!",
             "father" :{
-                "name" :"unknown",
+                "name" :"스노우",
                 "birth":"",
                 "thumbnail": "/images/my_cre/bark/1624250228254-0.jpg"
             },
             "mother" :{
-                "name" :"unknown",
+                "name" :"코지",
                 "birth":"",
                 "thumbnail": "/images/my_cre/bark/1624250228254-1.jpg"
             },
@@ -264,8 +288,12 @@
         },
         {
             "id":"7",
+            "breeder":{
+                "team":"크레숲",
+                "name" : "김민정"
+            },
             "name":"rebin",
-            "birth":"",
+            "birth":"2021.06.05",
             "gender":"미정",
             "morph":"팬텀 릴리",
             "thumbnail":[
@@ -299,6 +327,62 @@
             "weight":[
                 {"date" : "2021.06.18","weight" : "1.7"}
                
+            ]
+        },
+        {
+            "id":"8",
+            "breeder":{
+                "team":"크레숲",
+                "name" : "김주연(Yeony Cre)"
+            },
+            "name":"연연",
+            "birth":"2021.04.22",
+            "gender":"미정",
+            "morph":"트라이 익스 할리",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/rebin/20210618_225110.jpg"}
+            ],
+            "report":"인형같은 레빈이~!",
+            "father" :{
+                "name" :"여름이",
+                "birth":"",
+                "thumbnail": "/images/my_cre/rebin/father.jpg"
+            },
+            "mother" :{
+                "name" :"가을이",
+                "birth":"",
+                "thumbnail": "/images/my_cre/rebin/mother.jpg"
+            },
+            "weight":[
+                {"date" : "","weight" : "2"}
+            ]
+        },
+        {
+            "id":"9",
+            "breeder":{
+                "team":"더베스트팜",
+                "name" : "필더네(마곡점)"
+            },
+            "name":"포포",
+            "birth":"2021.06.21",
+            "gender":"미정",
+            "morph":"트라이 익스 할리",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/rebin/20210618_225110.jpg"}
+            ],
+            "report":"인형같은 포포~!",
+            "father" :{
+                "name" :"",
+                "birth":"",
+                "thumbnail": "/images/my_cre/rebin/father.jpg"
+            },
+            "mother" :{
+                "name" :"",
+                "birth":"",
+                "thumbnail": "/images/my_cre/rebin/mother.jpg"
+            },
+            "weight":[
+                {"date" : "","weight" : "2"}
             ]
         }
     ]

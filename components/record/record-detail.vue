@@ -17,6 +17,9 @@
             <div class="info-detail">
                 <ul class="info-list">
                     <li>
+                        <div class="title">breeder</div><div class="desc"><span v-if="detailData.breeder.team">{{detailData.breeder.team}}</span> - <span v-if="detailData.breeder.name">{{detailData.breeder.name}}</span> </div>
+                    </li>
+                    <li>
                         <div class="title">name</div><div class="desc">{{detailData.name}}</div>
                     </li>
                     <li>

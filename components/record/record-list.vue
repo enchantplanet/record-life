@@ -1,6 +1,5 @@
 <template>
         <div class="record-list-wrap">
-            Our Url is: {{ $config.baseURL}}
             <ul>
                 <li v-for="item in listArrData" :key="item.id">
                     <a href="#"  @click.prevent="goDetail(item)">
@@ -60,6 +59,7 @@ export default {
         },
         dataSet(data){
             this.listArrData = data.list;
+            console.log("this.listArrData" , this.listArrData)
         },
         goDetail(data){
             this.$router.push({ path: this.$urlManager.page.recordView, query: { "recordData": data.id }});
