@@ -1,12 +1,6 @@
 <template>
     <div class="main-wrap">
-        <div class="search-wrap">
-            <form>
-                <legend>search</legend>
-                <input type="text" />
-                <button>search</button>
-            </form>
-        </div>
+        
         <div class="breeder-list-wrap">
             <ul class="breeder-list">
                 <li>

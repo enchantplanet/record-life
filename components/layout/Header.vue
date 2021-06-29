@@ -1,20 +1,28 @@
 <template>
-  <header>
-    <h1><a href="#" @click.prevent="goHome">CREMOA</a></h1>
-    <nav>
-      <ul>
-        <li class="depth">
-            <button  v-on:click.stop="onSubToggle">info</button>
-            <ul class="sub-depth" v-if="subView">
-              <li><NuxtLink to="/">breed</NuxtLink></li>
-              <li><NuxtLink to="/">용품</NuxtLink></li>
-            </ul>
-        </li>
-        <li class="depth">
-            <NuxtLink to="/record/record-list">my list</NuxtLink>
-        </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__top">
+      <h1><a href="#" @click.prevent="goHome">BOAST REPTILE</a></h1>
+      <nav class="header__nav">
+        <ul>
+          <li class="depth">
+              <button  v-on:click.stop="onSubToggle">info</button>
+              <ul class="sub-depth" v-if="subView">
+                <li><NuxtLink to="/">breed</NuxtLink></li>
+              </ul>
+          </li>
+          <li>
+              <NuxtLink to="/record/record-list">breeders</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/record/record-list">용품</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+      <LayoutHeaderSearch />
+      <div class="user-info">
+        <NuxtLink to="/record/record-list">my list</NuxtLink>
+      </div>
+    </div>
   </header>
 </template>
 <script>
