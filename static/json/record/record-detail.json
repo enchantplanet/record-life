@@ -6,7 +6,7 @@
                 "team":"라움",
                 "name" : "게코월드 _김포"
             },
-            "name":"kkagi",
+            "name":"깍지",
             "birth":"2020.8.04",
             "gender":"male",
             "morph":"트라이 익스 할리",
@@ -56,7 +56,7 @@
                 "team":"더브리더스",
                 "name" : "구월점"
             },
-            "name":"shushu",
+            "name":"슈슈",
             "birth":"",
             "gender":"female",
             "morph":"크림시클",
@@ -108,7 +108,7 @@
                 "team":"더브리더스",
                 "name" : "구월점"
             },
-            "name":"koko",
+            "name":"코코",
             "birth":"",
             "gender":"female",
             "morph":"텐저린",
@@ -153,7 +153,7 @@
                 "team":"MOON REPTILE",
                 "name" : "마산점"
             },
-            "name":"kongi",
+            "name":"꽁지",
             "birth":"",
             "gender":"male",
             "morph":"릴리",
@@ -205,7 +205,7 @@
                 "team":"Team CreWind",
                 "name" : "낭만사도"
             },
-            "name":"dalkong",
+            "name":"달콩",
             "birth":"",
             "gender":"female",
             "morph":"릴리 트라이",
@@ -258,7 +258,7 @@
                 "team":"더베스트팜",
                 "name" : "필더네(마곡점)"
             },
-            "name":"bark",
+            "name":"바크",
             "birth":"",
             "gender":"female",
             "morph":"트라이 익스 할리",
@@ -292,7 +292,7 @@
                 "team":"크레숲",
                 "name" : "김민정"
             },
-            "name":"rebin",
+            "name":"레빈",
             "birth":"2021.06.05",
             "gender":"미정",
             "morph":"팬텀 릴리",
@@ -335,26 +335,34 @@
                 "team":"크레숲",
                 "name" : "김주연(Yeony Cre)"
             },
-            "name":"연연",
+            "name":"디오",
             "birth":"2021.04.22",
             "gender":"미정",
             "morph":"트라이 익스 할리",
             "thumbnail":[
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/rebin/20210618_225110.jpg"}
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_39.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_36.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_33.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/1625313167549-20.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/1625313167549-19.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230941.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230934.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230920.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230905.jpg"}
             ],
-            "report":"인형같은 레빈이~!",
+            "report":"기대되는 아이~!",
             "father" :{
                 "name" :"여름이",
                 "birth":"",
-                "thumbnail": "/images/my_cre/rebin/father.jpg"
+                "thumbnail": "/images/my_cre/dio/father.jpg"
             },
             "mother" :{
                 "name" :"가을이",
                 "birth":"",
-                "thumbnail": "/images/my_cre/rebin/mother.jpg"
+                "thumbnail": "/images/my_cre/dio/mother.jpg"
             },
             "weight":[
-                {"date" : "","weight" : "2"}
+                {"date" : "2021-07-04","weight" : "2.9"}
             ]
         },
         {
@@ -363,26 +371,89 @@
                 "team":"더베스트팜",
                 "name" : "필더네(마곡점)"
             },
-            "name":"포포",
+            "name":"시루",
             "birth":"2021.06.21",
             "gender":"미정",
             "morph":"트라이 익스 할리",
             "thumbnail":[
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/rebin/20210618_225110.jpg"}
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/20210628_221952.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/20210628_222026.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/20210628_222321_HDR.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/20210628_232132.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/1625313167549-21.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/1625313167549-26.jpg"}
             ],
-            "report":"인형같은 포포~!",
+            "report":"시루 시루~!",
             "father" :{
                 "name" :"",
                 "birth":"",
-                "thumbnail": "/images/my_cre/rebin/father.jpg"
+                "thumbnail": "/images/my_cre/siru/father.jpg"
             },
             "mother" :{
                 "name" :"",
                 "birth":"",
-                "thumbnail": "/images/my_cre/rebin/mother.jpg"
+                "thumbnail": "/images/my_cre/siru/mother.jpg"
             },
             "weight":[
-                {"date" : "","weight" : "2"}
+                {"date" : "2021-07-04","weight" : "2.3"}
+            ]
+        },
+        {
+            "id":"10",
+            "breeder":{
+                "team":"더주",
+                "name" : ""
+            },
+            "name":"미루",
+            "birth":"",
+            "gender":"female",
+            "morph":"트라이 익스 할리",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/miru/20210705_015150.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/miru/20210705_015206.jpg"}
+            ],
+            "report":"이쁘게 커라~!",
+            "father" :{
+                "name" :"",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "mother" :{
+                "name" :"",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "weight":[
+                {"date" : "2021-07-05","weight" : "20.5"}
+            ]
+        }
+        ,
+        {
+            "id":"11",
+            "breeder":{
+                "team":"더주",
+                "name" : ""
+            },
+            "name":"나루",
+            "birth":"",
+            "gender":"female",
+            "morph":"트라이 익스 할리",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/naru/.jpg"}
+            ],
+            "report":"이쁘게 커라~!",
+            "father" :{
+                "name" :"",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "mother" :{
+                "name" :"",
+                "birth":"",
+                "thumbnail": ""
+            },
+            "weight":[
+                {"date" : "2021-07-05","weight" : "30"}
             ]
         }
     ]
