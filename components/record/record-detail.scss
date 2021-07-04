@@ -41,20 +41,7 @@
   .info-detail {
     @include unit(margin, 20 0 0);
 
-    .img-box {
-      ul {
-        display: flex;
-        overflow-x: auto;
-        @include unit(height, 300);
-        li {
-          float: left;
-          width: 100%;
-          img {
-            height: 100%;
-          }
-        }
-      }
-    }
+
     .info-list {
       display: flex;
       flex-wrap: wrap;
@@ -63,10 +50,11 @@
         width: 50%;
       }
       .title {
+        box-sizing: border-box;
         @include unit(width, 100);
         @include unit(padding, 10 0);
         @include unit(margin, 0 10 0);
-
+        
         font-weight: 700;
         @include font-color($font-color-dark);
         @include ico-list;
@@ -104,4 +92,42 @@
 }
 .masonry-container {
   @include unit(margin, 20 0 0);
+}
+
+
+@include md-1023{
+
+  .record-detail-wrap {
+    .info-parent {
+      
+      .img-box {
+        @include unit(height, 200);
+      
+      }
+    }
+    .info-detail {
+
+      .info-list {
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+          display: block;
+          width: 50%;
+        }
+        .title {
+          width: 100%;
+          @include unit(padding, 10 10 10 0);
+          @include unit(margin, 0);
+        }
+      
+        .desc {
+          @include unit(padding, 10 0);
+          @include unit(margin, 0 10 0 10);
+        }
+      }
+
+     
+    }
+  }
+
 }

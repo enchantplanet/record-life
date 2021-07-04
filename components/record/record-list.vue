@@ -25,6 +25,12 @@
                                 <li>
                                     <div class="title">morph</div><div class="desc">{{item.morph}}</div>
                                 </li>
+                                <li class="info-weight" v-if="item.weight">
+                                    <div class="title">weight</div>
+                                    <div class="desc">
+                                        {{item.weight[item.weight.length -1].date}} : {{item.weight[item.weight.length -1].weight}} {{$infoManager.weightUnit}}
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>

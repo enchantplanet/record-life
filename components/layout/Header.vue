@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__top">
       <h1><a href="#" @click.prevent="goHome">BOAST REPTILE</a></h1>
-      <nav class="header__nav">
+      <!-- <nav class="header__nav">
         <ul>
           <li class="depth">
               <button  v-on:click.stop="onSubToggle">info</button>
@@ -18,7 +18,7 @@
           </li>
         </ul>
       </nav>
-      <LayoutHeaderSearch />
+      <LayoutHeaderSearch /> -->
       <div class="user-info">
         <NuxtLink to="/record/record-list">my list</NuxtLink>
       </div>
