@@ -1,0 +1,15 @@
+@import "@/assets/scss/common/common-sass.scss";
+
+.store-list-wrap{
+  .store-list{
+    li{
+      @include unit(margin, 20 0 0);
+    }
+    .name{
+      font-weight: bold;
+    }
+    .info{
+      @include unit(margin, 10 0 0);
+    }
+  }
+}

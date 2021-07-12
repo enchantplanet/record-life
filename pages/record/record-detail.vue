@@ -3,7 +3,7 @@
         <LayoutHeading2 :text="getName" />
         <record-detail v-if="detailData" :detailData="detailData" />
         <div class="masonry-container">
-            <vue-masonry-wall :items="imageItems" :options="{width: 280, padding: 12}">
+            <vue-masonry-wall :items="imageItems" :options="{width: 250, padding: 5}">
             <template v-slot:default="{item}">
                 <div class="item">
                     <img :src="item.image"/>
@@ -30,7 +30,7 @@ export default {
    },
    computed:{
        getName(){
-           return this.dataName + " detaile"
+           return this.dataName + " detaile view"
        }
    },
     mounted() {

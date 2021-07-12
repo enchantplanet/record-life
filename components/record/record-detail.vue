@@ -1,15 +1,15 @@
 <template>
         <div class="record-detail-wrap" v-if="detailData">
             <div class="info-parent">
-                <div class="father">
+                <div class="father" >
                     <span class="name">{{detailData.father.name}}</span>
-                    <div class="img-box">
+                    <div class="img-box" v-if="detailData.father.thumbnail">
                         <img :src="detailData.father.thumbnail" alt="" />
                     </div> 
                 </div>
                 <div class="mother">
                     <span class="name">{{detailData.mother.name}}</span>
-                    <div class="img-box">
+                    <div class="img-box" v-if="detailData.mother.thumbnail">
                         <img :src="detailData.mother.thumbnail" alt="" />
                     </div>
                 </div>
@@ -17,19 +17,13 @@
             <div class="info-detail">
                 <ul class="info-list">
                     <li>
-                        <div class="title">breeder</div><div class="desc"><span v-if="detailData.breeder.team">{{detailData.breeder.team}}</span> - <span v-if="detailData.breeder.name">{{detailData.breeder.name}}</span> </div>
-                    </li>
-                    <li>
-                        <div class="title">name</div><div class="desc">{{detailData.name}}</div>
-                    </li>
-                    <li>
-                        <div class="title">birth</div><div class="desc">{{detailData.birth}}</div>
+                        <div class="title">morph</div><div class="desc">{{detailData.morph}}</div>
                     </li>
                     <li>
                         <div class="title">gender</div><div class="desc">{{detailData.gender}}</div>
                     </li>
-                    <li>
-                        <div class="title">morph</div><div class="desc">{{detailData.morph}}</div>
+                    <li v-if="detailData.birth">
+                        <div class="title">birth</div><div class="desc">{{detailData.birth}}</div>
                     </li>
                     <li class="info-weight" v-if="detailData.weight">
                         <div class="title">weight</div>
@@ -43,7 +37,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="info-report">
+                    <li v-if="detailData.breeder.team">
+                        <div class="title">breeder</div><div class="desc"><span>{{detailData.breeder.team}}</span> - <span v-if="detailData.breeder.name">{{detailData.breeder.name}}</span> </div>
+                    </li>
+                    <li class="info-report" v-if="detailData.report">
                         <div class="title">report</div><div class="desc">{{detailData.report}}</div>
                     </li>
                 </ul>

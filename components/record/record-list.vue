@@ -17,9 +17,6 @@
                                     <div class="title">name</div><div class="desc">{{item.name}}</div>
                                 </li>
                                 <li>
-                                    <div class="title">birth</div><div class="desc">{{item.birth}}</div>
-                                </li>
-                                <li>
                                     <div class="title">gender</div><div class="desc">{{item.gender}}</div>
                                 </li>
                                 <li>

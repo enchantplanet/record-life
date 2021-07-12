@@ -60,7 +60,7 @@ footer {
 }
 
 .contents {
-  @include unit(margin, 20 0 0);
+  @include unit(padding-bottom, 50);
   min-height: calc(100% - #{$header-height + $footer-height}px);
   @include cont-fluid;
 }

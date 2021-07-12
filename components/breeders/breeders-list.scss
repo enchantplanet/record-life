@@ -1,0 +1,36 @@
+@import "@/assets/scss/common/common-sass.scss";
+
+
+.breeder-list-wrap {
+  @include unit(margin, 20 0 0);
+  .breeder-list {
+    @include after_clear_both;
+    > li {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      &:nth-child(1n) {
+        @include unit(padding, 0 10 0 0);
+      }
+      &:nth-child(2n) {
+        @include unit(padding, 0 0 0 10);
+      }
+      &:nth-child(n + 3) {
+        @include unit(margin, 30 0 0);
+      }
+    }
+    .name {
+      background-color: $background-color-primary;
+      @include unit(height, 100);
+    }
+    .breeder-info-list {
+      > li {
+        @include unit(padding, 5 0);
+        display: flex;
+        .title {
+          @include unit(width, 100);
+        }
+      }
+    }
+  }
+}

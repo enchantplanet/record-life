@@ -7,7 +7,7 @@ export default ({ app }, inject) => {
         },
         rest :{
             recordList: '/json/record/record-list.json',
-            recordDetail: '/json/record/record-detail.json'
+            recordDetail: '/json/record/record-list.json'
         }
     }
     inject('urlManager', Vue.observable(url))

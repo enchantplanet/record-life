@@ -2,23 +2,26 @@
   <header class="header">
     <div class="header__top">
       <h1><a href="#" @click.prevent="goHome">BOAST REPTILE</a></h1>
-      <!-- <nav class="header__nav">
+       <nav class="header__nav">
         <ul>
-          <li class="depth">
-              <button  v-on:click.stop="onSubToggle">info</button>
+          <li>
+              <NuxtLink to="/breeders/breeders-list">breeders</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/store/store-list">store</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/book/book-list">book</NuxtLink>
+          </li>
+          <!-- <li class="depth">
+              <button  v-on:click.stop="onSubToggle">book</button>
               <ul class="sub-depth" v-if="subView">
                 <li><NuxtLink to="/">breed</NuxtLink></li>
               </ul>
-          </li>
-          <li>
-              <NuxtLink to="/record/record-list">breeders</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/record/record-list">용품</NuxtLink>
-          </li>
+          </li> -->
         </ul>
       </nav>
-      <LayoutHeaderSearch /> -->
+      <!--<LayoutHeaderSearch /> -->
       <div class="user-info">
         <NuxtLink to="/record/record-list">my list</NuxtLink>
       </div>

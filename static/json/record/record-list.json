@@ -26,12 +26,10 @@
             "report":"깍지는 이쁘다 그러나 말 안듣다",
             "father" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": "/images/my_cre/kkagi/father.png"
             },
             "mother" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": "/images/my_cre/kkagi/mother.png"
             },
             "weight":[
@@ -78,12 +76,10 @@
             "report":"슈슈는 성격이 드럽다",
             "father" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": ""
             },
             "mother" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": ""
             },
             "weight":[
@@ -124,12 +120,10 @@
             "report":"코코는 무엇이 될꼬?",
             "father" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": ""
             },
             "mother" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": ""
             },
             "weight":[
@@ -175,12 +169,10 @@
             "report":"꽁지야 언넝 크자?",
             "father" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": ""
             },
             "mother" :{
                 "name" :"unknown",
-                "birth":"",
                 "thumbnail": ""
             },
             "weight":[
@@ -233,12 +225,10 @@
             "report":"달콩이 이뽀",
             "father" :{
                 "name" :"백수",
-                "birth":"",
                 "thumbnail": "/images/my_cre/dalkong/father_1.jpg"
             },
             "mother" :{
                 "name" :"육발(예상)",
-                "birth":"",
                 "thumbnail": "/images/my_cre/dalkong/mother_2.jpg"
             },
             "weight":[
@@ -272,12 +262,10 @@
             "report":"상남자 바크!",
             "father" :{
                 "name" :"스노우",
-                "birth":"",
                 "thumbnail": "/images/my_cre/bark/1624250228254-0.jpg"
             },
             "mother" :{
                 "name" :"코지",
-                "birth":"",
                 "thumbnail": "/images/my_cre/bark/1624250228254-1.jpg"
             },
             "weight":[
@@ -294,7 +282,7 @@
             },
             "name":"레빈",
             "birth":"2021.06.05",
-            "gender":"미정",
+            "gender":"미구분",
             "morph":"팬텀 릴리",
             "thumbnail":[
                 {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/rebin/20210618_225110.jpg"},
@@ -316,12 +304,10 @@
             "report":"인형같은 레빈이~!",
             "father" :{
                 "name" :"밀크레드",
-                "birth":"",
                 "thumbnail": "/images/my_cre/rebin/father.jpg"
             },
             "mother" :{
                 "name" :"귤이",
-                "birth":"",
                 "thumbnail": "/images/my_cre/rebin/mother.jpg"
             },
             "weight":[
@@ -335,31 +321,29 @@
                 "team":"크레숲",
                 "name" : "김주연(Yeony Cre)"
             },
-            "name":"디오",
+            "name":"디루",
             "birth":"2021.04.22",
-            "gender":"미정",
+            "gender":"미구분",
             "morph":"트라이 익스 할리",
             "thumbnail":[
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_39.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_36.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_33.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/1625313167549-20.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/1625313167549-19.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230941.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230934.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230920.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/20210701_230905.jpg"}
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/BandPhoto_2021_06_24_22_44_39.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/BandPhoto_2021_06_24_22_44_36.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/BandPhoto_2021_06_24_22_44_33.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/1625313167549-20.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/1625313167549-19.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/20210701_230941.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/20210701_230934.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/20210701_230920.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/diru/20210701_230905.jpg"}
             ],
             "report":"기대되는 아이~!",
             "father" :{
                 "name" :"여름이",
-                "birth":"",
-                "thumbnail": "/images/my_cre/dio/father.jpg"
+                "thumbnail": "/images/my_cre/diru/father.jpg"
             },
             "mother" :{
                 "name" :"가을이",
-                "birth":"",
-                "thumbnail": "/images/my_cre/dio/mother.jpg"
+                "thumbnail": "/images/my_cre/diru/mother.jpg"
             },
             "weight":[
                 {"date" : "2021-07-04","weight" : "2.9"}
@@ -373,7 +357,7 @@
             },
             "name":"시루",
             "birth":"2021.06.21",
-            "gender":"미정",
+            "gender":"미구분",
             "morph":"트라이 익스 할리",
             "thumbnail":[
                 {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/20210628_221952.jpg"},
@@ -385,13 +369,11 @@
             ],
             "report":"시루 시루~!",
             "father" :{
-                "name" :"",
-                "birth":"",
+                "name" :"unknown",
                 "thumbnail": "/images/my_cre/siru/father.jpg"
             },
             "mother" :{
-                "name" :"",
-                "birth":"",
+                "name" :"unknown",
                 "thumbnail": "/images/my_cre/siru/mother.jpg"
             },
             "weight":[
@@ -404,23 +386,24 @@
                 "team":"더주",
                 "name" : ""
             },
-            "name":"미루",
+            "name":"다미",
             "birth":"",
             "gender":"female",
             "morph":"트라이 익스 할리",
             "thumbnail":[
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/miru/20210705_015150.jpg"},
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/miru/20210705_015206.jpg"}
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dami/20210705_230242.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dami/20210705_230259.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dami/20210705_230317.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dami/20210705_230354.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dami/1625458581166-0.jpg"}
             ],
             "report":"이쁘게 커라~!",
             "father" :{
-                "name" :"",
-                "birth":"",
+                "name" :"unknown",
                 "thumbnail": ""
             },
             "mother" :{
-                "name" :"",
-                "birth":"",
+                "name" :"unknown",
                 "thumbnail": ""
             },
             "weight":[
@@ -434,26 +417,57 @@
                 "team":"더주",
                 "name" : ""
             },
-            "name":"나루",
+            "name":"나미",
             "birth":"",
             "gender":"female",
             "morph":"트라이 익스 할리",
             "thumbnail":[
-                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/naru/.jpg"}
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/nami/20210705_231136.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/nami/20210705_231146.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/nami/20210708_205511.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/nami/20210708_205552_HDR.jpg"}
             ],
             "report":"이쁘게 커라~!",
             "father" :{
-                "name" :"",
-                "birth":"",
+                "name" :"unknown",
                 "thumbnail": ""
             },
             "mother" :{
-                "name" :"",
-                "birth":"",
+                "name" :"unknown",
                 "thumbnail": ""
             },
             "weight":[
                 {"date" : "2021-07-05","weight" : "30"}
+            ]
+        }
+        ,
+        {
+            "id":"12",
+            "breeder":{
+                "team":"크레숲",
+                "name" : "김민정"
+            },
+            "name":"비비",
+            "birth":"2021-04-27",
+            "gender":"미구분",
+            "morph":"트라이 익스 할리",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/bibi/BandPhoto_2021_07_06_11_51_00.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/bibi/20210708_211509.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/bibi/BandPhoto_2021_07_06_11_50_55.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/bibi/BandPhoto_2021_07_06_11_51_04.jpg"}
+            ],
+            "report":"비비 이쁘게 커라~!",
+            "father" :{
+                "name" :"다크호스",
+                "thumbnail": "/images/my_cre/bibi/BandPhoto_2021_07_06_11_51_09.jpg"
+            },
+            "mother" :{
+                "name" :"동백이(메이팅중)",
+                "thumbnail": "/images/my_cre/bibi/BandPhoto_2021_07_06_11_51_14.jpg"
+            },
+            "weight":[
+                {"date" : "2021-07-05","weight" : "3"}
             ]
         }
     ]
