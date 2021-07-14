@@ -3,11 +3,15 @@ import Vue from 'vue'
 export default ({ app }, inject) => {
     let url = {
         page: {
-            recordView: '/record/record-detail'
+            recordView: '/record/record-detail',
+            breeders: '/breeders/breeders-list',
+            store:'/store/store-list',
+            book:'/book/book-list'
+
         },
         rest :{
-            recordList: '/json/record/record-list.json',
-            recordDetail: '/json/record/record-list.json'
+            recordList: 'api/record/record-list',
+            recordDetail: 'api/record/record-detail'
         }
     }
     inject('urlManager', Vue.observable(url))

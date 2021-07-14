@@ -1,18 +1,19 @@
 <template>
   <header class="header">
     <div class="header__top">
-      <h1><a href="#" @click.prevent="goHome">BOAST REPTILE</a></h1>
+      <h1><a href="#" @click.prevent="goLink('home')">BOAST REPTILE</a></h1>
        <nav class="header__nav">
         <ul>
           <li>
-              <NuxtLink to="/breeders/breeders-list">breeders</NuxtLink>
+            <a href="#" @click.prevent="goLink('breeders')">breeders</a>
           </li>
           <li>
-            <NuxtLink to="/store/store-list">store</NuxtLink>
+            <a href="#" @click.prevent="goLink('store')">store</a>
           </li>
           <li>
-            <NuxtLink to="/book/book-list">book</NuxtLink>
+            <a href="#" @click.prevent="goLink('book')">book</a>
           </li>
+
           <!-- <li class="depth">
               <button  v-on:click.stop="onSubToggle">book</button>
               <ul class="sub-depth" v-if="subView">
@@ -45,8 +46,17 @@ export default {
     })
   },
   methods: {
-    goHome() {
-      this.$router.push('/');
+    goLink(urlName){
+      if(urlName == "home"){
+        this.$router.push('/');
+      }else if(urlName == "breeders"){
+        this.$router.push({ path: this.$urlManager.page.breeders});
+      }else if(urlName == "store"){
+        this.$router.push({ path: this.$urlManager.page.store});
+      }else if(urlName == "book"){
+        this.$router.push({ path: this.$urlManager.page.book});
+      }
+            
     },
     onSubToggle(){
       this.subView = !this.subView;
