@@ -30,6 +30,7 @@ export default {
   plugins: [
     '~/plugins/urlManager.js',
     '~/plugins/infoManager.js',
+    { src: '~/plugins/vue-datepicker', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -37,6 +38,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/moment',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
