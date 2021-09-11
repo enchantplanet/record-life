@@ -50,7 +50,10 @@
                 {"date" : "2021.06.04","weight" : "7.9"},
                 {"date" : "2021.06.27","weight" : "10.5"},
                 {"date" : "2021.07.24","weight" : "14.4"},
-                {"date" : "2021.08.06","weight" : "16.5"}
+                {"date" : "2021.08.06","weight" : "16.5"},
+                {"date" : "2021.08.22","weight" : "20"},
+                {"date" : "2021.09.11","weight" : "24"}
+
             ]
         },
         {
@@ -105,7 +108,8 @@
                 {"date" : "2021.06.11","weight" : "16.5"},
                 {"date" : "2021.06.27","weight" : "19.8"},
                 {"date" : "2021.07.24","weight" : "25.4"},
-                {"date" : "2021.08.06","weight" : "25.4"}
+                {"date" : "2021.08.06","weight" : "25.4"},
+                {"date" : "2021.09.11","weight" : "33.6"}
             ]
         },
         {
@@ -153,7 +157,9 @@
                 {"date" : "2021.06.11","weight" : "7.2"},
                 {"date" : "2021.06.27","weight" : "8.6"},
                 {"date" : "2021.07.24","weight" : "13.5"},
-                {"date" : "2021.08.06","weight" : "15"}
+                {"date" : "2021.08.06","weight" : "15"},
+                {"date" : "2021.08.22","weight" : "18.9"},
+                {"date" : "2021.09.11","weight" : "22"}
             ]
         },
         {
@@ -208,7 +214,9 @@
                 {"date" : "2021.06.11","weight" : "5.5"},
                 {"date" : "2021.06.27","weight" : "7"},
                 {"date" : "2021.07.24","weight" : "10.6"},
-                {"date" : "2021.08.06","weight" : "12.1"}
+                {"date" : "2021.08.06","weight" : "12.1"},
+                {"date" : "2021.08.22","weight" : "15.7"},
+                {"date" : "2021.09.11","weight" : "20"}
             ]
         },
         {
@@ -265,7 +273,8 @@
                 {"date" : "2021.06.11","weight" : "12.9"},
                 {"date" : "2021.06.27","weight" : "15.1"},
                 {"date" : "2021.07.24","weight" : "20.6"},
-                {"date" : "2021.08.06","weight" : "22.1"}
+                {"date" : "2021.08.06","weight" : "22.1"},
+                {"date" : "2021.09.11","weight" : "29.2"}
             ]
         },
         {
@@ -276,7 +285,7 @@
             },
             "name":"바크",
             "birth":"",
-            "gender":"female",
+            "gender":"male",
             "morph":"트라이 익스 할리",
             "thumbnail":[
                 {"title":"","content":"","image":"/images/my_cre/bark/1624119430120-7.jpg"},
@@ -299,7 +308,8 @@
                 {"date" : "2021.06.18","weight" : "30"},
                 {"date" : "2021.06.27","weight" : "31.5"},
                 {"date" : "2021.07.24","weight" : "32.9"},
-                {"date" : "2021.08.06","weight" : "35.2"}
+                {"date" : "2021.08.06","weight" : "35.2"},
+                {"date" : "2021.09.11","weight" : "35.9"}
                
             ]
         },
@@ -344,7 +354,9 @@
             "weight":[
                 {"date" : "2021.06.18","weight" : "1.7"},
                 {"date" : "2021.07.24","weight" : "2.7"},
-                {"date" : "2021.08.06","weight" : "3.6"}
+                {"date" : "2021.08.06","weight" : "3.6"},
+                {"date" : "2021.08.22","weight" : "5.1"},
+                {"date" : "2021.09.11","weight" : "7"}
                
             ]
         },
@@ -356,7 +368,7 @@
             },
             "name":"디오",
             "birth":"2021.04.22",
-            "gender":"미구분",
+            "gender":"male",
             "morph":"트라이 익스 할리",
             "thumbnail":[
                 {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/dio/BandPhoto_2021_06_24_22_44_39.jpg"},
@@ -383,7 +395,9 @@
             "weight":[
                 {"date" : "2021-07-04","weight" : "2.9"},
                 {"date" : "2021.07.24","weight" : "4.1"},
-                {"date" : "2021.08.06","weight" : "5.3"}
+                {"date" : "2021.08.06","weight" : "5.3"},
+                {"date" : "2021.08.22","weight" : "8.5"},
+                {"date" : "2021.09.11","weight" : "10.3"}
             ]
         },
         {
@@ -394,7 +408,7 @@
             },
             "name":"시루",
             "birth":"2021.06.21",
-            "gender":"미구분",
+            "gender":"암추",
             "morph":"트라이 익스 할리",
             "thumbnail":[
                 {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/siru/20210628_221952.jpg"},
@@ -420,7 +434,9 @@
             "weight":[
                 {"date" : "2021-07-04","weight" : "2.3"},
                 {"date" : "2021.07.24","weight" : "3.5"},
-                {"date" : "2021.08.06","weight" : "4.4"}
+                {"date" : "2021.08.06","weight" : "4.4"},
+                {"date" : "2021.08.22","weight" : "7.2"},
+                {"date" : "2021.09.11","weight" : "9"}
             ]
         },
         {
@@ -456,7 +472,8 @@
             "weight":[
                 {"date" : "2021-07-05","weight" : "20.5"},
                 {"date" : "2021.07.24","weight" : "28"},
-                {"date" : "2021.08.06","weight" : "29"}
+                {"date" : "2021.08.06","weight" : "29"},
+                {"date" : "2021.09.11","weight" : "35"}
             ]
         }
         ,
@@ -490,7 +507,8 @@
             "weight":[
                 {"date" : "2021-07-05","weight" : "30"},
                 {"date" : "2021.07.24","weight" : "40"},
-                {"date" : "2021.08.06","weight" : "40"}
+                {"date" : "2021.08.06","weight" : "40"},
+                {"date" : "2021.09.11","weight" : "45"}
             ]
         }
         ,
@@ -502,7 +520,7 @@
             },
             "name":"쭈리",
             "birth":"2021-04-27",
-            "gender":"미구분",
+            "gender":"암추",
             "morph":"트라이 익스 할리",
             "thumbnail":[
                 {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/jjuri/BandPhoto_2021_07_06_11_51_00.jpg"},
@@ -525,7 +543,9 @@
             "weight":[
                 {"date" : "2021-07-05","weight" : "3"},
                 {"date" : "2021.07.24","weight" : "5.5"},
-                {"date" : "2021.08.06","weight" : "6.6"}
+                {"date" : "2021.08.06","weight" : "6.6"},
+                {"date" : "2021.08.22","weight" : "10"},
+                {"date" : "2021.09.11","weight" : "13.2"}
                 
             ]
         },
@@ -553,7 +573,9 @@
                 "thumbnail": "/images/my_cre/GMi5/mother.jpg"
             },
             "weight":[
-                {"date" : "2021-08-19","weight" : "2.1"}
+                {"date" : "2021-08-19","weight" : "2.1"},
+                {"date" : "2021.08.22","weight" : "2.4"},
+                {"date" : "2021.09.11","weight" : "3.3"}
                 
             ]
         },
@@ -582,7 +604,9 @@
                 "thumbnail": "/images/my_cre/qs1/mother.jpg"
             },
             "weight":[
-                {"date" : "2021-08-19","weight" : "2.1"}
+                {"date" : "2021-08-19","weight" : "2.1"},
+                {"date" : "2021.08.22","weight" : "2.8"},
+                {"date" : "2021.09.11","weight" : "3.6"}
                 
             ]
         },
@@ -611,7 +635,9 @@
                 "thumbnail": "/images/my_cre/qs2/mother.jpg"
             },
             "weight":[
-                {"date" : "2021-08-19","weight" : "2.1"}
+                {"date" : "2021-08-19","weight" : "2.1"},
+                {"date" : "2021.08.22","weight" : "2.9"},
+                {"date" : "2021.09.11","weight" : "3.7"}
                 
             ]
         },
@@ -641,7 +667,119 @@
                 "thumbnail": ""
             },
             "weight":[
-                {"date" : "2021-08-19","weight" : "44"}
+                {"date" : "2021-08-19","weight" : "44"},
+                {"date" : "2021.09.11","weight" : "50"}
+                
+            ]
+        },
+        {
+            "id":"17",
+            "breeder":{
+                "team":"크레숲",
+                "name" : "강명길"
+            },
+            "name":"승이",
+            "birth":"2021.05.15",
+            "gender":"female",
+            "morph":"크림시클",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge0.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge1.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge2.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge3.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge4.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge5.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge6.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge7.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge8.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge9.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge10.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge11.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge12.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge13.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge14.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge15.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge16.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge17.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge18.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge19.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge20.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge21.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge22.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/seunge/seunge23.jpg"}
+            ],
+            "report":"처녀생식",
+            "father" :{
+                "name" :"크리미",
+                "thumbnail": "/images/my_cre/seunge/mother.jpg"
+            },
+            "mother" :{
+                "name" :"",
+                "thumbnail": ""
+            },
+            "weight":[
+                {"date" : "2021.09.11","weight" : "7.8"}
+                
+            ]
+        },
+        {
+            "id":"18",
+            "breeder":{
+                "team":"크레숲",
+                "name" : "강명길"
+            },
+            "name":"막내",
+            "birth":"2021.08.14",
+            "gender":"미구분",
+            "morph":"크림시클",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/last/last0.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/last/last1.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/last/last2.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/last/last3.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/last/last4.jpg"}
+            ],
+            "report":"",
+            "father" :{
+                "name" :"",
+                "thumbnail": "/images/my_cre/last/father.jpg"
+            },
+            "mother" :{
+                "name" :"",
+                "thumbnail": "/images/my_cre/last/mother.jpg"
+            },
+            "weight":[
+                {"date" : "2021.09.11","weight" : "7.8"}
+                
+            ]
+        },
+        {
+            "id":"19",
+            "breeder":{
+                "team":"크레숲",
+                "name" : "김주연"
+            },
+            "name":"여봄",
+            "birth":"2021.06/15",
+            "gender":"암추",
+            "morph":"풀커버리지 트익할",
+            "thumbnail":[
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/ss/ss1.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/ss/ss2.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/ss/ss3.jpg"},
+                {"title":"안녕","content":"처음봐~^^","image":"/images/my_cre/ss/ss4.jpg"}
+            ],
+            "report":"",
+            "father" :{
+                "name" :"여름",
+                "thumbnail": "/images/my_cre/ss/father.jpg"
+            },
+            "mother" :{
+                "name" :"봄",
+                "thumbnail": "/images/my_cre/ss/mother.jpg"
+            },
+            "weight":[
+                {"date" : "2021.09.11","weight" : "7.8"}
                 
             ]
         }

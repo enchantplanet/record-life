@@ -30,7 +30,7 @@ export default {
    },
    computed:{
        getName(){
-           return this.dataName + " detaile view"
+           return this.dataName;
        }
    },
     mounted() {

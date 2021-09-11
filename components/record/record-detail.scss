@@ -17,14 +17,14 @@
     }
 
     .father {
-      @include unit(padding, 0 10 0);
+      @include unit(padding, 0 5 0 0);
 
       .name {
         @include ico-father;
       }
     }
     .mother {
-      @include unit(padding, 0 0 10);
+      @include unit(padding, 0 0 0 5);
       .name {
         @include ico-mother;
       }
@@ -101,7 +101,7 @@
     .info-parent {
       
       .img-box {
-        @include unit(height, 200);
+        @include unit(height, 100);
       
       }
     }
@@ -116,12 +116,12 @@
         }
         .title {
           width: 100%;
-          @include unit(padding, 10 10 10 0);
+          @include unit(padding, 10 10 5 0);
           @include unit(margin, 0);
         }
       
         .desc {
-          @include unit(padding, 10 0);
+          @include unit(padding, 5 0);
           @include unit(margin, 0 10 0 10);
         }
       }

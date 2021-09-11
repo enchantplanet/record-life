@@ -1,5 +1,12 @@
 <template>
         <div class="record-list-wrap">
+            <div class="select_box">
+                <select v-model="selected" @change="onChange($event)">
+                    <option v-for="record in selectData" v-bind:value="record.id" :key="record.id">
+                        {{ record.name }}
+                    </option>
+                </select>
+            </div>
             <ul>
                 <li v-for="item in listArrData" :key="item.id">
                     <a href="#"  @click.prevent="goDetail(item)">
@@ -15,6 +22,9 @@
                             <ul class="info-list">
                                 <li>
                                     <div class="title">name</div><div class="desc">{{item.name}}</div>
+                                </li>
+                                <li>
+                                    <div class="title">birth</div><div class="desc">{{item.birth}}</div>
                                 </li>
                                 <li>
                                     <div class="title">gender</div><div class="desc">{{item.gender}}</div>
@@ -41,7 +51,10 @@
 export default {
     data: function () {
         return {
-            listArrData: null
+            apiData:null,
+            listArrData: null,
+            selected:0,
+            selectData:null
         }
    },
     mounted() {
@@ -61,11 +74,19 @@ export default {
             });
         },
         dataSet(data){
-            this.listArrData = data.list;
-            console.log("this.listArrData" , this.listArrData)
+            this.apiData = data.list;
+            this.listArrData = this.apiData;
+            this.selectData = [{id:0,name:"all"},...data.list];
         },
         goDetail(data){
             this.$router.push({ path: this.$urlManager.page.recordView, query: { "recordData": data.id }});
+        },
+        onChange(event){
+            if(event.target.value == 0){
+                this.listArrData = this.apiData;
+            }else{
+                this.listArrData = this.apiData.filter( list => list.id == event.target.value );
+            }
         }
     }
 }

@@ -1,6 +1,20 @@
 @import "@/assets/scss/common/common-sass.scss";
 
 .record-list-wrap {
+  position: relative;
+  .select_box{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    @include unit(padding, 10 0 10);
+    background: #fff;
+    select{
+      width: 100%
+    }
+  }
+  > ul{
+    @include unit(margin, 10 0 0);
+  }
   > ul > li {
     @include unit(margin, 20 0 0);
     @include unit(padding, 20 0 0);
@@ -28,6 +42,7 @@
 
     .info-box {
       width: 50%;
+      box-sizing: border-box;
       @include unit(padding, 0 10);
     }
   }
@@ -76,7 +91,7 @@
       display: block;
       .img-box {
         width: 100%;
-        @include unit(height, 200);
+        @include unit(height, 220);
         background-color: #eee;
         img {
           height: 100%;
@@ -87,7 +102,7 @@
   
       .info-box {
         width: 100%;
-        @include unit(padding, 0 10);
+        @include unit(padding, 0);
       }
     }
   }

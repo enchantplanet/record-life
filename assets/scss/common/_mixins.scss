@@ -156,27 +156,27 @@
 }
 @mixin ico-father {
   &::before {
-    content: "F";
+    content: "";
     display: inline-block;
-    width: set-size(20);
-    height: set-size(20);
+    width: set-size(13);
+    height: set-size(24);
     @include unit(margin, 0 10 0 0);
     text-align: center;
     vertical-align: middle;
-    @include font-color($font-color-light);
-    background-color: $ico-father-bg;
+    background:url(/images/common/man.png) no-repeat;
+    background-size: contain;
   }
 }
 @mixin ico-mother {
   &::before {
-    content: "M";
+    content: "";
     display: inline-block;
-    width: set-size(20);
-    height: set-size(20);
+    width: set-size(13);
+    height: set-size(24);
     @include unit(margin, 0 10 0 0);
     text-align: center;
     vertical-align: middle;
-    @include font-color($font-color-light);
-    background-color: $ico-mother-bg;
+    background:url(/images/common/woman.png) no-repeat;
+    background-size: contain;
   }
 }
