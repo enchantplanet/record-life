@@ -260,8 +260,8 @@
                 "thumbnail": "/images/my_cre/dalkong/father_1.jpg"
             },
             "mother" :{
-                "name" :"육발(예상)",
-                "thumbnail": "/images/my_cre/dalkong/mother_2.jpg"
+                "name" :"unknown",
+                "thumbnail": ""
             },
             "weight":[
                 {"date" : "2021.04.30","weight" : "6.3"},
@@ -600,7 +600,7 @@
                 "thumbnail": "/images/my_cre/qs1/father.jpg"
             },
             "mother" :{
-                "name" :"",
+                "name" :"unknown",
                 "thumbnail": "/images/my_cre/qs1/mother.jpg"
             },
             "weight":[
@@ -659,11 +659,11 @@
             ],
             "report":"3차 산란 무1유1 4차는 9월 초 예정",
             "father" :{
-                "name" :"",
+                "name" :"unknown",
                 "thumbnail": ""
             },
             "mother" :{
-                "name" :"",
+                "name" :"unknown",
                 "thumbnail": ""
             },
             "weight":[
@@ -714,8 +714,8 @@
                 "thumbnail": "/images/my_cre/seunge/mother.jpg"
             },
             "mother" :{
-                "name" :"",
-                "thumbnail": ""
+                "name" :"크리미",
+                "thumbnail":  "/images/my_cre/seunge/mother.jpg"
             },
             "weight":[
                 {"date" : "2021.09.11","weight" : "7.8"}
@@ -741,15 +741,15 @@
             ],
             "report":"",
             "father" :{
-                "name" :"",
+                "name" :"unknown",
                 "thumbnail": "/images/my_cre/last/father.jpg"
             },
             "mother" :{
-                "name" :"",
+                "name" :"unknown",
                 "thumbnail": "/images/my_cre/last/mother.jpg"
             },
             "weight":[
-                {"date" : "2021.09.11","weight" : "7.8"}
+                {"date" : "2021.09.11","weight" : "2.3"}
                 
             ]
         },
@@ -779,7 +779,7 @@
                 "thumbnail": "/images/my_cre/ss/mother.jpg"
             },
             "weight":[
-                {"date" : "2021.09.11","weight" : "7.8"}
+                {"date" : "2021.09.11","weight" : "5.3"}
                 
             ]
         }

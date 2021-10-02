@@ -28,8 +28,7 @@
                     <li class="info-weight" v-if="detailData.weight">
                         <div class="title">weight</div>
                         <div class="desc">
-                            {{detailData.weight[detailData.weight.length -1].date}} : {{detailData.weight[detailData.weight.length -1].weight}} {{$infoManager.weightUnit}}
-                            <button type="button" @click="toggleWeightList">리스트</button>
+                            <button type="button" @click="toggleWeightList">{{detailData.weight[detailData.weight.length -1].date}} : {{detailData.weight[detailData.weight.length -1].weight}} {{$infoManager.weightUnit}}</button>
                             <ul class="weight-list" v-if="isViewWeight">
                                 <li  v-for="item in detailData.weight" :key="item.date">
                                     {{item.date}}   :   {{item.weight}} {{$infoManager.weightUnit}}

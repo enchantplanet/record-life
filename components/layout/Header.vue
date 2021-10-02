@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__top">
-      <h1><a href="#" @click.prevent="goLink('home')">ENCHANT<br/>PLANET</a></h1>
+      <h1><a href="#" @click.prevent="goLink('home')">CRE<br/>PLANET</a></h1>
        <nav class="header__nav">
         <ul>
           <li>

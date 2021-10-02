@@ -7,7 +7,6 @@
             <template v-slot:default="{item}">
                 <div class="item">
                     <img :src="item.image"/>
-                    <div v-if="item.title" class="title">{{item.title}}</div>
                     <p v-if="item.content" class="content">{{item.content}}</p>
                 </div>
             </template>

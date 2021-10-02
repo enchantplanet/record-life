@@ -52,7 +52,6 @@
       .title {
         box-sizing: border-box;
         @include unit(width, 100);
-        @include unit(padding, 10 0);
         @include unit(margin, 0 10 0);
         
         font-weight: 700;
@@ -63,7 +62,7 @@
         width: 100%;
       }
       .desc {
-        @include unit(padding, 10 0);
+        @include unit(padding, 10 0 0);
         @include font-color($font-color-secondary);
       }
     }
@@ -106,22 +105,23 @@
       }
     }
     .info-detail {
-
+      @include unit(margin, 10 0 0);
       .info-list {
         display: flex;
         flex-wrap: wrap;
         > li {
           display: block;
           width: 50%;
+          @include unit(padding, 10 0 0);
+
         }
         .title {
           width: 100%;
-          @include unit(padding, 10 10 5 0);
           @include unit(margin, 0);
         }
       
         .desc {
-          @include unit(padding, 5 0);
+          @include unit(padding, 5 0 0);
           @include unit(margin, 0 10 0 10);
         }
       }

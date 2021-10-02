@@ -69,17 +69,15 @@
   .info-list {
     > li {
       display: flex;
+      @include unit(margin, 10 0 0);
     }
     .title {
       @include unit(width, 70);
-      @include unit(margin, 0 10 0);
-      @include unit(padding, 10 0);
       font-weight: 700;
       @include font-color($font-color-dark);
       @include ico-list;
     }
     .desc {
-      @include unit(padding, 10 0);
       @include font-color($font-color-secondary);
     }
   }

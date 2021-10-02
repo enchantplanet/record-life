@@ -11,14 +11,14 @@
                 <li v-for="item in listArrData" :key="item.id">
                     <a href="#"  @click.prevent="goDetail(item)">
                     <div class="detail-info-wrap">
+                        <div class="info-parent">
+                            <div class="father"><span class="name">{{item.father.name}}</span></div>
+                            <div class="mother"><span class="name">{{item.mother.name}}</span></div>
+                        </div>
                         <div class="img-box">
-                            <img :src="item.thumbnail[0].image" alt="" />
+                            <img :src="item.thumbnail[item.thumbnail.length-1].image" alt="" />
                         </div>
                         <div class="info-box">
-                            <div class="info-parent">
-                                <div class="father"><span class="name">{{item.father.name}}</span></div>
-                                <div class="mother"><span class="name">{{item.mother.name}}</span></div>
-                            </div>
                             <ul class="info-list">
                                 <li>
                                     <div class="title">name</div><div class="desc">{{item.name}}</div>
@@ -76,14 +76,25 @@ export default {
         dataSet(data){
             this.apiData = data.list;
             this.listArrData = this.apiData;
-            this.selectData = [{id:0,name:"all"},...data.list];
+            this.selectData = [{id:0,name:"all"},{id:'adult',name:"성체"},{id:'male',name:"male"},{id:'female',name:"female"},{id:'unkonwn',name:"미구분"},...data.list];
         },
         goDetail(data){
             this.$router.push({ path: this.$urlManager.page.recordView, query: { "recordData": data.id }});
         },
         onChange(event){
+            console.log(event.target)
             if(event.target.value == 0){
                 this.listArrData = this.apiData;
+            }else if(event.target.value == 'adult'){
+                this.listArrData = this.apiData.filter((list) => {
+                    return  30 < list.weight[list.weight.length -1].weight;
+                });
+            }else if(event.target.value == 'male'){
+                this.listArrData = this.apiData.filter( list => list.gender == 'male' );
+            }else if(event.target.value == 'female'){
+                this.listArrData = this.apiData.filter( list => list.gender == 'female' );
+            }else if(event.target.value == 'unkonwn'){
+                this.listArrData = this.apiData.filter( list => list.gender != 'male' && list.gender != 'female' );
             }else{
                 this.listArrData = this.apiData.filter( list => list.id == event.target.value );
             }
