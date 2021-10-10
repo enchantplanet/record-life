@@ -5,14 +5,19 @@
         <div class="masonry-container">
             <vue-masonry-wall :items="imageItems" :options="{width: 250, padding: 5}">
             <template v-slot:default="{item}">
-                <div class="item">
+                <div class="item" @click="imgSelect(item.image)">
                     <img :src="item.image"/>
                     <p v-if="item.content" class="content">{{item.content}}</p>
                 </div>
             </template>
         </vue-masonry-wall>
         </div>
-        
+        <div v-show="isImgView" class="pop-img-viewer">
+            <button class="btn_close" @click="imgViewClose">닫기</button>
+            <div class="img_container">
+                <img :src="isSelectImg" />
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -24,7 +29,9 @@ export default {
             dataName:"",
             detailId:null,
             detailData: null,
-            imageItems:[]
+            imageItems:[],
+            isImgView :false,
+            isSelectImg:""
         }
    },
    computed:{
@@ -61,6 +68,13 @@ export default {
                 }
             });
         },
+        imgViewClose(){
+            this.isImgView = false;
+        },
+        imgSelect(imgPath){
+            this.isImgView = true;
+            this.isSelectImg = imgPath;
+        }
        
     }
 }

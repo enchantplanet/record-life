@@ -3,13 +3,13 @@
             <div class="info-parent">
                 <div class="father" >
                     <span class="name">{{detailData.father.name}}</span>
-                    <div class="img-box" v-if="detailData.father.thumbnail">
+                    <div @click="imgSelect(detailData.father.thumbnail)" class="img-box" v-if="detailData.father.thumbnail">
                         <img :src="detailData.father.thumbnail" alt="" />
                     </div> 
                 </div>
                 <div class="mother">
                     <span class="name">{{detailData.mother.name}}</span>
-                    <div class="img-box" v-if="detailData.mother.thumbnail">
+                    <div @click="imgSelect(detailData.mother.thumbnail)" class="img-box" v-if="detailData.mother.thumbnail">
                         <img :src="detailData.mother.thumbnail" alt="" />
                     </div>
                 </div>
@@ -45,12 +45,19 @@
                 </ul>
                 
             </div>
+            <div v-show="isImgView" class="pop-img-viewer">
+                <button class="btn_close" @click="imgViewClose">닫기</button>
+                <div class="img_container">
+                    <img :src="isSelectImg" />
+                </div>
+            </div>
         </div>
 </template>
 <script>
+import Button from '../common/button.vue';
 
 export default {
-  components: { },
+  components: {Button },
     props: {
         detailData:{
             type : Object,
@@ -60,6 +67,8 @@ export default {
     data : function(){
         return {
             isViewWeight: false,
+            isImgView :false,
+            isSelectImg:""
         }
     },
     mounted(){
@@ -68,6 +77,13 @@ export default {
     methods :{
         toggleWeightList(){
             this.isViewWeight = !this.isViewWeight;
+        },
+        imgViewClose(){
+            this.isImgView = false;
+        },
+        imgSelect(imgPath){
+            this.isImgView = true;
+            this.isSelectImg = imgPath;
         }
     }
 }
