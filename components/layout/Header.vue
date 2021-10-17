@@ -1,15 +1,15 @@
 <template>
   <header class="header">
     <div class="header__top">
-      <h1><a href="#" @click.prevent="goLink('home')">CRE<br/>PLANET</a></h1>
+      <h1><a href="#" @click.prevent="goLink('home')">CRE<br/>ENCHANT</a></h1>
        <nav class="header__nav">
         <ul>
-          <li>
+          <!-- <li>
             <a href="#" @click.prevent="goLink('breeders')">breeders</a>
           </li>
           <li>
             <a href="#" @click.prevent="goLink('store')">store</a>
-          </li>
+          </li> -->
           <li>
             <a href="#" @click.prevent="goLink('book')">book</a>
           </li>

@@ -1,9 +1,10 @@
 <template>
         <div class="record-list-wrap">
             <div class="select_box">
+                Total : {{listArrData && listArrData.length}}
                 <select v-model="selected" @change="onChange($event)">
                     <option v-for="record in selectData" v-bind:value="record.id" :key="record.id">
-                        {{ record.name }}
+                        {{ record.name }} 
                     </option>
                 </select>
             </div>
@@ -66,7 +67,8 @@ export default {
                 method: 'get',
                 url: this.$urlManager.rest.recordList
             }
-             await this.$axios(option).then((response) => {
+            await this.$axios(option).then((response) => {
+                console.log("response" , response)
                  this.dataSet(response.data);
             })
             .catch((err) => {
@@ -87,7 +89,7 @@ export default {
                 this.listArrData = this.apiData;
             }else if(event.target.value == 'adult'){
                 this.listArrData = this.apiData.filter((list) => {
-                    return  30 < list.weight[list.weight.length -1].weight;
+                    return  35 < list.weight[list.weight.length -1].weight;
                 });
             }else if(event.target.value == 'male'){
                 this.listArrData = this.apiData.filter( list => list.gender == 'male' );
