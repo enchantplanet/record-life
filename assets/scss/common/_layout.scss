@@ -3,7 +3,7 @@ body {
   background-color: $body-color;
 }
 .header {
-  @include unit(padding, 20);
+  @include unit(padding, 10);
   @include cont-fluid("header");
   border-bottom: 1px solid #e4e8eb;
   background-color: $header-color;
@@ -13,6 +13,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    h1{
+      img{
+        height: 30px;
+      }
+    }
   }
   &__nav {
     ul {
