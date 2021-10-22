@@ -6,7 +6,8 @@ export default ({ app }, inject) => {
             recordView: '/record/record-detail',
             breeders: '/breeders/breeders-list',
             store:'/store/store-list',
-            book:'/book/book-list'
+            book:'/book/book-list',
+            list:'/record/record-list'
 
         },
         rest :{

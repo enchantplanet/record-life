@@ -62,28 +62,45 @@
                 </ul>
             </div>
             <div v-if="tabSelect == 1" class="tab-content">
-                <div>
-                    <label>산란일</label><date-picker :language="ko" type="date" @selected="changeDate" placeholder="YYYY/MM/DD" format="yyyy/MM/dd" v-model="selectDate" />
-                    <label>온도</label><input type="number" v-model="selectTemperature" @change="changeTemperature" />
-                    <p>부화기간 : {{hatchAddDate}}</p>
-                    <p>예상 해칭일 : {{hatchDate}}</p>
+                <div class="cal-content">
+                    <ul>
+                        <li>
+                            <label class="label">산란일</label><date-picker :language="ko" type="date" @selected="changeDate" placeholder="YYYY/MM/DD" format="yyyy/MM/dd" v-model="selectDate" />
+                        </li>
+                        <li>
+                            <label class="label">온도</label><input type="number" v-model="selectTemperature" @change="changeTemperature" />
+                        </li>
+                        <li>
+                            <span class="label">예상 기간</span>{{hatchAddDate}}
+                        </li>
+                        <li>
+                            <span class="label">예상 해칭일</span>{{hatchDate}}
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div v-if="tabSelect == 2" class="tab-content">
-                <ul>
-                    <li>적재 소 : 16.0cm x 10.6cm</li>
-                    <li>적재 중 : 21.0cm x 12.4cm</li>
-                    <li>적재 대 : 28.8cm x 17.4cm</li>
-                    <li>유도리 : 26.5cm x 26.0cm</li>
-                </ul>
+                <div>
+                    <ul class="box-size-info">
+                        <li>적재 소 : 16.0cm x 10.6cm</li>
+                        <li>적재 중 : 21.0cm x 12.4cm</li>
+                        <li>적재 대 : 28.8cm x 17.4cm</li>
+                        <li>유도리 : 26.5cm x 26.0cm</li>
+                    </ul>
+                </div>
+                
                 
             </div>
             <div v-if="tabSelect == 3" class="tab-content">
-                <div>일우</div>
-                <img src="/images/book/ilwoo.jpg"/>
-                <img src="/images/book/ilwoo2.jpg"/>
-                <div>다이소</div>
-                <img src="/images/book/daiso.jpg"/>
+                <div class="brand-name">일우</div>
+                <div class="brand-info">
+                    <img src="/images/book/ilwoo.jpg"/>
+                    <img src="/images/book/ilwoo2.jpg"/>
+                </div>
+                <div class="brand-name">다이소</div>
+                <div class="brand-info">
+                    <img src="/images/book/daiso.jpg"/>
+                </div>
             </div>
         </div>
         

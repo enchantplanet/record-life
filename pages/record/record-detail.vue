@@ -7,7 +7,7 @@
             <template v-slot:default="{item}">
                 <div class="item" @click="imgSelect(item.image)">
                     <img :src="item.image"/>
-                    <p v-if="item.content" class="content">{{item.content}}</p>
+                    <p v-if="item.title" class="title">{{item.title}}</p>
                 </div>
             </template>
         </vue-masonry-wall>

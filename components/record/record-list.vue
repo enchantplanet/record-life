@@ -1,10 +1,9 @@
 <template>
         <div class="record-list-wrap">
             <div class="select_box">
-                Total : {{listArrData && listArrData.length}}
                 <select v-model="selected" @change="onChange($event)">
                     <option v-for="record in selectData" v-bind:value="record.id" :key="record.id">
-                        {{ record.name }} 
+                        {{record.name}} {{getFilterData(record.id).length > 1 ? "("+getFilterData(record.id).length+")" : ''}}
                     </option>
                 </select>
             </div>
@@ -84,21 +83,23 @@ export default {
             this.$router.push({ path: this.$urlManager.page.recordView, query: { "recordData": data.id }});
         },
         onChange(event){
-            console.log(event.target)
-            if(event.target.value == 0){
-                this.listArrData = this.apiData;
-            }else if(event.target.value == 'adult'){
-                this.listArrData = this.apiData.filter((list) => {
+            this.listArrData = this.getFilterData(event.target.value)
+        },
+        getFilterData(type){
+            if(type == 0){
+                return this.apiData;
+            }else if(type == 'adult'){
+                return this.apiData.filter((list) => {
                     return  35 < list.weight[list.weight.length -1].weight;
                 });
-            }else if(event.target.value == 'male'){
-                this.listArrData = this.apiData.filter( list => list.gender == 'male' );
-            }else if(event.target.value == 'female'){
-                this.listArrData = this.apiData.filter( list => list.gender == 'female' );
-            }else if(event.target.value == 'unkonwn'){
-                this.listArrData = this.apiData.filter( list => list.gender != 'male' && list.gender != 'female' );
+            }else if(type == 'male'){
+                return this.apiData.filter( list => list.gender == 'male' );
+            }else if(type == 'female'){
+                return this.apiData.filter( list => list.gender == 'female' );
+            }else if(type == 'unkonwn'){
+                return this.apiData.filter( list => list.gender != 'male' && list.gender != 'female' );
             }else{
-                this.listArrData = this.apiData.filter( list => list.id == event.target.value );
+                return this.apiData.filter( list => list.id == type );
             }
         }
     }

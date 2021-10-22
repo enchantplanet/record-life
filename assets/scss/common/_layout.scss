@@ -24,7 +24,7 @@ body {
       display: flex;
       li {
         @include unit(margin, 0 10 0 0);
-        &::first-child {
+        &:last-child {
           @include unit(margin, 0 0 0 0);
         }
       }
@@ -57,7 +57,7 @@ footer {
 }
 .heading-wrap {
   h2 {
-    @include unit(padding, 20 0);
+    @include unit(padding, 10 0);
     @include unit(font-size, 20);
     @include font-color($font-color-h2);
     font-weight: 800;

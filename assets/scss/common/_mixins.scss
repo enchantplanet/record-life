@@ -137,8 +137,8 @@
     padding-right: set-size(58);
   }
   @include md-767 {
-    padding-left: set-size(30);
-    padding-right: set-size(30);
+    padding-left: set-size(20);
+    padding-right: set-size(20);
   }
 }
 @mixin ico-list {
